@@ -1,14 +1,14 @@
 <template>
   <div class="report-expert-domain-wrapper">
     <div class="breadcrumb">
-      <report-breadcrumb type="全球专家应用领域分布" />
+      <report-breadcrumb type="全球专家领域分布" />
     </div>
 
     <div class="container">
       <el-card style="margin-bottom: 20px;">
         <h3 class="chart-title">全球分布一览</h3>
         <div class="chart-wrapper">
-          <chart-map />
+          <chart-map :legend="legendData" :map-data="mapData" />
         </div>
       </el-card>
     </div>
@@ -17,12 +17,27 @@
 
 <script>
 import ChartMap from '@/components/charts/map'
+import { AI_DOMAIN } from '@/utils/constant'
+import expertDomainData from '@/mock-data/expert-domain'
 
 export default {
   name: 'ReportExpertDomain',
 
   components: {
     ChartMap
+  },
+
+  data() {
+    return {
+      legendData: AI_DOMAIN,
+      mapData: expertDomainData
+    }
+  },
+
+  mounted() {
+  },
+
+  methods: {
   }
 }
 </script>

@@ -14,27 +14,20 @@ import worldZh from '@/utils/world-zh'
 export default {
   name: 'Map',
 
+  props: {
+    legend: {
+      type: Array,
+      required: true
+    },
+    mapData: {
+      type: Object,
+      required: true
+    }
+  },
+
   data() {
     return {
       id: '',
-      mapData: [
-        {
-          name: 'China',
-          value: 92
-        },
-        {
-          name: 'United States',
-          value: 88
-        },
-        {
-          name: 'Russia',
-          value: 78
-        },
-        {
-          name: 'Switzerland',
-          value: 72
-        }
-      ],
       formatData: []
     }
   },
@@ -45,7 +38,6 @@ export default {
 
   mounted() {
     this.$nextTick(() => {
-      this.formatData = this.convertData(this.mapData)
       this.initData()
     })
   },
@@ -54,11 +46,24 @@ export default {
     initData() {
       const option = {
         legend: {
-          orient: 'vertical',
+          orient: 'horizontal',
+          type: 'scroll',
           left: 'left',
-          data: ['全部', '机器学习', 'NLP'],
+          data: this.legend,
           selectedMode: 'single'
         },
+        color: [
+          '#967adc',
+          '#fb8585',
+          '#f6bb42',
+          '#3dd5ff',
+          '#8cc152',
+          '#e7affe',
+          '#3bafda',
+          '#20cec8',
+          '#8dd1e1',
+          '#9cacf1'
+        ],
         visualMap: {
           min: 0,
           max: 1000,
@@ -68,21 +73,21 @@ export default {
           text: ['高', '低'],
           pieces: [
             {
-              gte: 90,
+              gte: 80,
               lt: 100,
-              label: '> 90 人',
+              label: '> 80 人',
               color: '#7f1100'
             },
             {
-              gte: 80,
-              lt: 90,
-              label: '80 - 90 人',
+              gte: 40,
+              lt: 80,
+              label: '40 - 80 人',
               color: '#ff5428'
             },
             {
-              gte: 70,
-              lt: 80,
-              label: '70 - 80 人',
+              gte: 0,
+              lt: 40,
+              label: '0 - 40 人',
               color: '#ff8c71'
             }
           ],
@@ -114,10 +119,10 @@ export default {
             }
           }
         },
-        series: [
-          {
+        series: Object.keys(this.mapData).map((domain) => {
+          return {
             type: 'map',
-            name: '全部',
+            name: domain,
             map: 'world',
             geoIndex: 1,
             tooltip: {
@@ -149,148 +154,69 @@ export default {
               show: true,
               formatter: (args) => {
                 const name = this.convertZh(args.name)
-                const temp = this.mapData.find((item) => item.name === args.name)
+                const temp = this.mapData[domain].find((item) => item.name === args.name)
                 return temp ? name : ''
               }
             },
-            data: this.mapData
-          },
-          {
-            type: 'map',
-            name: '机器学习',
-            map: 'world',
-            geoIndex: 1,
-            tooltip: {
-              show: true,
-              formatter: (args) => {
-                const name = this.convertZh(args.name)
-                if (args.data) {
-                  return '专家数量<br />' + name + ' : ' + args.data.value
-                } else {
-                  return name
-                }
-              }
-            },
-            itemStyle: {
-              normal: {
-                borderColor: '#eaeaea',
-                borderWidth: 1,
-                areaColor: '#fff',
-                fontWeightL: 700
-              },
-              emphasis: {
-                areaColor: 'rgba(0,0,0, 0.2)',
-                label: {
-                  show: false
-                }
-              }
-            },
-            label: {
-              show: true,
-              formatter: (args) => {
-                const name = this.convertZh(args.name)
-                const temp = this.mapData.find((item) => item.name === args.name)
-                return temp ? name : ''
-              }
-            },
-            data: this.mapData
-          },
-          {
-            type: 'map',
-            name: 'NLP',
-            map: 'world',
-            geoIndex: 1,
-            tooltip: {
-              show: true,
-              formatter: (args) => {
-                const name = this.convertZh(args.name)
-                if (args.data) {
-                  return '专家数量<br />' + name + ' : ' + args.data.value
-                } else {
-                  return name
-                }
-              }
-            },
-            itemStyle: {
-              normal: {
-                borderColor: '#eaeaea',
-                borderWidth: 1,
-                areaColor: '#fff',
-                fontWeightL: 700
-              },
-              emphasis: {
-                areaColor: 'rgba(0,0,0, 0.2)',
-                label: {
-                  show: false
-                }
-              }
-            },
-            label: {
-              show: true,
-              formatter: (args) => {
-                const name = this.convertZh(args.name)
-                const temp = this.mapData.find((item) => item.name === args.name)
-                return temp ? name : ''
-              }
-            },
-            data: this.mapData
+            data: this.mapData[domain]
           }
-          // {
-          //   name: '专家数量',
-          //   type: 'scatter',
-          //   coordinateSystem: 'geo',
-          //   symbol: 'circle',
-          //   label: {
-          //     show: true,
-          //     formatter: (args) => {
-          //       return args.name
-          //     }
-          //   },
-          //   itemStyle: {
-          //     show: false,
-          //     normal: {
-          //       show: false,
-          //       color: '#5599E4'
-          //     }
-          //   },
-          //   zlevel: 6,
-          //   data: this.formatData,
-          //   tooltip: {
-          //     formatter: (args) => {
-          //       return args.seriesName + '<br />' + args.name + ' : ' + args.value[2]
-          //     }
-          //   }
-          // }
-          // {
-          //   name: '专家数量',
-          //   type: 'effectScatter', // 散点图
-          //   coordinateSystem: 'geo', // 使用地理坐标系
-          //   hoverAnimation: 'false',
-          //   legendHoverLink: 'false',
-          //   rippleEffect: {
-          //     period: 4,
-          //     brushType: 'stroke',
-          //     scale: 3
-          //   },
-          //   data: this.formatData,
-          //   symbolSize: 8,
-          //   itemStyle: {
-          //     show: false,
-          //     normal: {
-          //       color: '#5599E4'
-          //     }
-          //   },
-          //   zlevel: 1,
-          //   label: {
-          //     show: true,
-          //     formatter: (args) => {
-          //       return args.value[2] + '\n' + args.name
-          //     },
-          //     offset: [0, 30]
-          //   }
-          // }
-        ]
+        })
+        // {
+        //   name: '专家数量',
+        //   type: 'scatter',
+        //   coordinateSystem: 'geo',
+        //   symbol: 'circle',
+        //   label: {
+        //     show: true,
+        //     formatter: (args) => {
+        //       return args.name
+        //     }
+        //   },
+        //   itemStyle: {
+        //     show: false,
+        //     normal: {
+        //       show: false,
+        //       color: '#5599E4'
+        //     }
+        //   },
+        //   zlevel: 6,
+        //   data: this.formatData,
+        //   tooltip: {
+        //     formatter: (args) => {
+        //       return args.seriesName + '<br />' + args.name + ' : ' + args.value[2]
+        //     }
+        //   }
+        // }
+        // {
+        //   name: '专家数量',
+        //   type: 'effectScatter', // 散点图
+        //   coordinateSystem: 'geo', // 使用地理坐标系
+        //   hoverAnimation: 'false',
+        //   legendHoverLink: 'false',
+        //   rippleEffect: {
+        //     period: 4,
+        //     brushType: 'stroke',
+        //     scale: 3
+        //   },
+        //   data: this.formatData,
+        //   symbolSize: 8,
+        //   itemStyle: {
+        //     show: false,
+        //     normal: {
+        //       color: '#5599E4'
+        //     }
+        //   },
+        //   zlevel: 1,
+        //   label: {
+        //     show: true,
+        //     formatter: (args) => {
+        //       return args.value[2] + '\n' + args.name
+        //     },
+        //     offset: [0, 30]
+        //   }
+        // }
       }
+      console.log(option)
       const chart = echarts.init(document.getElementById(this.id))
       chart.setOption(option)
     },

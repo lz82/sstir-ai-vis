@@ -1,6 +1,6 @@
 const Layout = () => import(/* webpackChunkName: "reportlayout" */ '@/layout/report')
 
-const ReportList = () => import(/* webpackChunkName: "report-list" */ '@/views/report/report-list')
+const ReportList = () => import(/* webpackChunkName: "report-list" */ '@/views/report/list')
 
 const ReportExpertDomain = () =>
   import(/* webpackChunkName: "report-expert-domain" */ '@/views/report/expert-domain')
@@ -16,7 +16,7 @@ const ReportExpertRank = () =>
 export default [
   {
     path: '/report',
-    redirect: '/report/award',
+    redirect: '/report/list',
     name: 'ReportLayout',
     component: Layout,
     children: [

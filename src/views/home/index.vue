@@ -28,13 +28,11 @@
 <script>
 import TagCloud from './tag-cloud'
 
-// import tagTrade from './img/ball_trade.png' // 技术交易
-import tagProject from './img/ball_pro.png' // 立项项目
-import tagPatent from './img/ball_patent.png' // 专利
-import tagPaper from './img/ball_paper.png' // 论文
-import tagExpert from './img/ball_expert.png' // 专家
-import tagInvest from './img/ball_invest.png' // 投资机构
-import tagEnterprise from './img/ball_enterprise.png' // 企业
+import tagDomain from './img/ball_domain.png' // 领域专家
+import tagIndustry from './img/ball_industry.png' // 行业专家
+import tagOrg from './img/ball_org.png' // 机构
+import tagRank from './img/ball_rank.png' // 排行
+
 export default {
   name: 'Homepage2',
 
@@ -47,39 +45,24 @@ export default {
       title: '世界人工智能专家&机构分析报告',
       tags: [
         {
-          // 专家
-          img: tagExpert,
-          url: '/report/expert'
+          // 领域专家
+          img: tagDomain,
+          url: '/report/expert-domain'
         },
         {
-          // 投资机构
-          img: tagInvest,
-          url: '/report/invest'
+          // 行业专家
+          img: tagIndustry,
+          url: '/report/expert-industry'
         },
         {
-          // 论文
-          img: tagPaper,
-          url: '/report/paper'
+          // 机构
+          img: tagOrg,
+          url: '/report/org'
         },
         {
-          // 专利
-          img: tagPatent,
-          url: '/report/patent'
-        },
-        {
-          // 立项项目
-          img: tagProject,
-          url: '/report/project'
-        },
-        // {
-        //   // 技术交易
-        //   img: tagTrade,
-        //   url: '/report/trade'
-        // },
-        {
-          // 企业
-          img: tagEnterprise,
-          url: '/report/enterprise'
+          // 排行
+          img: tagRank,
+          url: '/report/rank'
         }
       ],
       keyword: ''
