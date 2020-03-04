@@ -71,58 +71,61 @@ export default {
           bottom: 40,
           showLabel: !0,
           text: ['高', '低'],
+          textStyle: {
+            color: '#fff'
+          },
           pieces: [
             {
-              gte: 80,
-              lt: 100,
-              label: '> 80 人',
+              gte: 100,
+              label: '> 100 人',
               color: '#7f1100'
             },
             {
-              gte: 40,
-              lt: 80,
-              label: '40 - 80 人',
+              gte: 30,
+              lt: 100,
+              label: '30 - 100 人',
               color: '#ff5428'
             },
             {
-              gte: 0,
-              lt: 40,
-              label: '0 - 40 人',
+              gte: 1,
+              lt: 30,
+              label: '0 - 30 人',
               color: '#ff8c71'
             }
           ],
           show: !0
         },
-        backgroundColor: '#eaeaea',
+        backgroundColor: '#404a59',
         tooltip: {
           trigger: 'item'
         },
-        geo: {
-          map: 'world',
-          label: {
-            normal: {
-              show: false
-            },
-            emphasis: {
-              show: false
-            }
-          },
-          roam: false,
-          itemStyle: {
-            normal: {
-              borderColor: '#f6f6f6',
-              borderWidth: 1,
-              areaColor: '#f6f6f6'
-            },
-            emphasis: {
-              areaColor: '#f6f6f6'
-            }
-          }
-        },
+        // geo: {
+        //   map: 'world',
+        //   label: {
+        //     normal: {
+        //       show: false
+        //     },
+        //     emphasis: {
+        //       show: false
+        //     }
+        //   },
+        //   roam: true,
+        //   itemStyle: {
+        //     normal: {
+        //       borderColor: '#f6f6f6',
+        //       borderWidth: 1,
+        //       areaColor: '#f6f6f6'
+        //     },
+        //     emphasis: {
+        //       areaColor: '#f6f6f6'
+        //     }
+        //   }
+        // },
         series: Object.keys(this.mapData).map((domain) => {
           return {
             type: 'map',
             name: domain,
+            roam: true,
             map: 'world',
             geoIndex: 1,
             tooltip: {
@@ -138,13 +141,13 @@ export default {
             },
             itemStyle: {
               normal: {
-                borderColor: '#eaeaea',
+                borderColor: '#404a59',
                 borderWidth: 1,
-                areaColor: '#fff',
+                areaColor: '#323c48',
                 fontWeightL: 700
               },
               emphasis: {
-                areaColor: 'rgba(0,0,0, 0.2)',
+                areaColor: 'rgba(255,255,255, 0.5)',
                 label: {
                   show: false
                 }
@@ -152,6 +155,7 @@ export default {
             },
             label: {
               show: true,
+              color: '#fff',
               formatter: (args) => {
                 const name = this.convertZh(args.name)
                 const temp = this.mapData[domain].find((item) => item.name === args.name)
@@ -216,7 +220,6 @@ export default {
         //   }
         // }
       }
-      console.log(option)
       const chart = echarts.init(document.getElementById(this.id))
       chart.setOption(option)
     },

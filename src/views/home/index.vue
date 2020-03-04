@@ -62,7 +62,7 @@ export default {
         {
           // 排行
           img: tagRank,
-          url: '/report/rank'
+          url: '/report/expert-rank'
         }
       ],
       keyword: ''

@@ -11,7 +11,7 @@
             <h2 class="title">
               {{ item.title }}
             </h2>
-            <span class="more">More<i class="el-icon-arrow-right"></i></span>
+            <span class="more">更多<i class="el-icon-arrow-right"></i></span>
           </div>
           <div class="content">
             <div class="word">
@@ -110,6 +110,8 @@ export default {
           font-size: 16px;
           font-weight: 600;
           color: #409eff;
+          padding-left: 10px;
+          border-left: solid 3px #409eff;
         }
       }
       .report-item:hover {

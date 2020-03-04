@@ -13,6 +13,9 @@ const ReportOrg = () => import(/* webpackChunkName: "report-org" */ '@/views/rep
 const ReportExpertRank = () =>
   import(/* webpackChunkName: "report-expert-rank" */ '@/views/report/expert-rank')
 
+const ReportDetail = () =>
+  import(/* webpackChunkName: "report-expert-detail" */ '@/views/report/expert-detail')
+
 export default [
   {
     path: '/report',
@@ -44,6 +47,12 @@ export default [
         path: '/report/expert-rank',
         component: ReportExpertRank,
         name: 'ReportExpertRank'
+      },
+      {
+        path: '/report/expert/:id',
+        component: ReportDetail,
+        name: 'ReportDetail',
+        props: true
       }
     ]
   }

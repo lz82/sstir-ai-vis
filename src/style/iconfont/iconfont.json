@@ -1,0 +1,23 @@
+{
+  "id": "1671169",
+  "name": "sstir-ai-vis",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "553322",
+      "name": "所属职位",
+      "font_class": "suoshuzhiwei",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "1038046",
+      "name": "机构",
+      "font_class": "jigou",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    }
+  ]
+}

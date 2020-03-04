@@ -177,6 +177,7 @@ export default {
     "Zambia": "赞比亚",
     "Zimbabwe": "津巴布韦",
     "Singapore Rep.": "新加坡",
+    "Singapore": "新加坡",
     "Dominican Rep.": "多米尼加",
     "Palestine": "巴勒斯坦",
     "Bahamas": "巴哈马",
@@ -200,5 +201,8 @@ export default {
     "Solomon Is.": "所罗门群岛",
     "Serbia": "塞尔维亚",
     "Tanzania": "坦桑尼亚",
-    "United States": "美国"
+    "United States": "美国",
+    "USA": "美国",
+    "Bahrain": "巴林",
+    "Hong Kong": "中国香港"
 }

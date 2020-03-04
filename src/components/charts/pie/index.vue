@@ -19,6 +19,10 @@ export default {
     chartData: {
       type: Array,
       required: true
+    },
+    field: {
+      type: String,
+      default: '专家数量'
     }
   },
 
@@ -68,17 +72,17 @@ export default {
         legend: {
           type: 'scroll',
           orient: 'vertical',
-          right: 10,
-          top: 20,
-          bottom: 20,
+          right: 25,
+          // top: 5,
+          bottom: 5,
           data: localLegend
         },
         series: [
           {
-            name: 'Field',
+            name: '专家数量',
             type: 'pie',
-            radius: '40%',
-            center: ['30%', '45%'],
+            radius: '60%',
+            center: ['40%', '45%'],
             data: this.chartData,
             itemStyle: {
               emphasis: {
@@ -100,7 +104,7 @@ export default {
 <style lang="less" scoped>
 .pie-wrapper {
   .container {
-    width: 590px;
+    width: 1158px;
     height: 400px;
   }
 }
