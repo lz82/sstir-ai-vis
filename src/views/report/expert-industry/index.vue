@@ -46,18 +46,9 @@ export default {
 <style lang="less" scoped>
 .report-expert-industry-wrapper {
   .container {
-    .header-wrapper {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      align-items: center;
-
-      a {
-        color: #66b1ff;
-      }
-    }
     .chart-title {
-      margin: 10px 0 20px 0;
+      height: 40px;
+      line-height: 40px;
       font-size: 16px;
       font-weight: 600;
       position: relative;
@@ -67,8 +58,8 @@ export default {
         position: absolute;
         content: '';
         left: 0;
-        top: 0;
-        // top: 9px;
+        top: 50%;
+        transform: translateY(-50%);
         width: 4px;
         height: 20px;
         background: #66b1ff;
@@ -84,6 +75,9 @@ export default {
     .space-10 {
       height: 10px;
     }
+  }
+  /deep/ .el-card__body {
+    padding-top: 5px !important;
   }
 }
 </style>

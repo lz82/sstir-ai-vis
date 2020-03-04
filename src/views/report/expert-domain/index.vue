@@ -8,7 +8,10 @@
       <el-card style="margin-bottom: 20px;">
         <div class="header-wrapper">
           <h3 class="chart-title">全球专家分布</h3>
-          <a href="./data/excel/专家详情信息表字段.xlsx" download="全球专家领域分布数据.xlsx"
+          <a
+            href="/data/excel/专家详情信息表字段.xlsx"
+            download="全球专家领域分布数据.xlsx"
+            target="_blank"
             ><i class="el-icon-download"
           /></a>
         </div>
@@ -21,7 +24,7 @@
       <el-card style="margin-bottom: 20px;">
         <div class="header-wrapper">
           <h3 class="chart-title">专家学历情况</h3>
-          <a href="./data/excel/专家学历分布.xlsx" download="专家学历分布.xlsx"
+          <a href="/data/excel/专家学历分布.xlsx" download="专家学历分布.xlsx" target="_blank"
             ><i class="el-icon-download"
           /></a>
         </div>
@@ -35,7 +38,7 @@
       <el-card style="margin-bottom: 20px;">
         <div class="header-wrapper">
           <h3 class="chart-title">专家领域占比</h3>
-          <a href="./data/excel/专家领域分布.xlsx" download="专家领域分布.xlsx"
+          <a href="/data/excel/专家领域分布.xlsx" download="专家领域分布.xlsx" target="_blank"
             ><i class="el-icon-download"
           /></a>
         </div>
@@ -111,7 +114,7 @@ export default {
         { name: '可视化', value: 26 },
         { name: '安全与隐私', value: 16 },
         { name: '计算机图形', value: 10 },
-        { name: '计算机网络', value: 4 },
+        { name: '计算机网络', value: 4 }
         // { name: '物联网', value: 2 },
         // { name: '多媒体', value: 1 },
         // { name: '计算机系统', value: 1 }
@@ -134,16 +137,19 @@ export default {
       justify-content: space-between;
       align-items: center;
       position: relative;
-      padding-left: 10px;
-
-      &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 9px;
-        width: 4px;
-        height: 20px;
-        background: #66b1ff;
+      height: 40px;
+      h3 {
+        padding-left: 10px;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 4px;
+          height: 20px;
+          background: #66b1ff;
+        }
       }
 
       a {
@@ -151,7 +157,7 @@ export default {
       }
     }
     .chart-title {
-      margin: 10px 0 20px 0;
+      // margin: 10px 0 20px 0;
       font-size: 16px;
       font-weight: 600;
     }
@@ -165,6 +171,9 @@ export default {
     .space-10 {
       height: 10px;
     }
+  }
+  /deep/ .el-card__body {
+    padding-top: 5px !important;
   }
 }
 </style>

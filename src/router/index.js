@@ -20,6 +20,7 @@ const PolicyPage = () => import(/* webpackChunkName: "policy" */ '@/views/policy
 Vue.use(Router)
 
 const router = new Router({
+  mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
   routes: [
     {

@@ -305,5 +305,8 @@ export default {
       }
     }
   }
+  /deep/ .el-card__body {
+    padding-top: 5px !important;
+  }
 }
 </style>

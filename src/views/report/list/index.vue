@@ -112,6 +112,8 @@ export default {
           color: #409eff;
           padding-left: 10px;
           border-left: solid 3px #409eff;
+          display: flex;
+          align-items: center;
         }
       }
       .report-item:hover {
