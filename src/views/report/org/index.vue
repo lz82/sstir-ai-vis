@@ -14,7 +14,7 @@
         </div> -->
         <h3 class="chart-title">全球人工智能机构分布</h3>
         <div class="chart-wrapper">
-          <chart-map :legend="orgType" :map-data="mapData" />
+          <chart-map :legend="orgType" :map-data="mapData" unit="机构" />
         </div>
       </el-card>
       <div class="space-10" />

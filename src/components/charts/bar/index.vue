@@ -78,7 +78,8 @@ export default {
           containLabel: true
         },
         xAxis: {
-          type: 'value'
+          type: 'value',
+          max:1050
         },
         yAxis: {
           type: 'category',

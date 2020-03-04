@@ -22,6 +22,10 @@ export default {
     mapData: {
       type: Object,
       required: true
+    },
+    unit: {
+      type: String,
+      default: '专家'
     }
   },
 
@@ -50,11 +54,14 @@ export default {
           type: 'scroll',
           left: 'left',
           data: this.legend,
-          selectedMode: 'single'
+          selectedMode: 'single',
+          textStyle: {
+            color: '#fff'
+          },
+          pageIconColor: '#fff'
         },
         color: [
           '#967adc',
-          '#fb8585',
           '#f6bb42',
           '#3dd5ff',
           '#8cc152',
@@ -99,28 +106,6 @@ export default {
         tooltip: {
           trigger: 'item'
         },
-        // geo: {
-        //   map: 'world',
-        //   label: {
-        //     normal: {
-        //       show: false
-        //     },
-        //     emphasis: {
-        //       show: false
-        //     }
-        //   },
-        //   roam: true,
-        //   itemStyle: {
-        //     normal: {
-        //       borderColor: '#f6f6f6',
-        //       borderWidth: 1,
-        //       areaColor: '#f6f6f6'
-        //     },
-        //     emphasis: {
-        //       areaColor: '#f6f6f6'
-        //     }
-        //   }
-        // },
         series: Object.keys(this.mapData).map((domain) => {
           return {
             type: 'map',
@@ -133,7 +118,7 @@ export default {
               formatter: (args) => {
                 const name = this.convertZh(args.name)
                 if (args.data) {
-                  return '专家数量<br />' + name + ' : ' + args.data.value
+                  return this.unit + '数量<br />' + name + ' : ' + args.data.value
                 } else {
                   return name
                 }
@@ -165,60 +150,6 @@ export default {
             data: this.mapData[domain]
           }
         })
-        // {
-        //   name: '专家数量',
-        //   type: 'scatter',
-        //   coordinateSystem: 'geo',
-        //   symbol: 'circle',
-        //   label: {
-        //     show: true,
-        //     formatter: (args) => {
-        //       return args.name
-        //     }
-        //   },
-        //   itemStyle: {
-        //     show: false,
-        //     normal: {
-        //       show: false,
-        //       color: '#5599E4'
-        //     }
-        //   },
-        //   zlevel: 6,
-        //   data: this.formatData,
-        //   tooltip: {
-        //     formatter: (args) => {
-        //       return args.seriesName + '<br />' + args.name + ' : ' + args.value[2]
-        //     }
-        //   }
-        // }
-        // {
-        //   name: '专家数量',
-        //   type: 'effectScatter', // 散点图
-        //   coordinateSystem: 'geo', // 使用地理坐标系
-        //   hoverAnimation: 'false',
-        //   legendHoverLink: 'false',
-        //   rippleEffect: {
-        //     period: 4,
-        //     brushType: 'stroke',
-        //     scale: 3
-        //   },
-        //   data: this.formatData,
-        //   symbolSize: 8,
-        //   itemStyle: {
-        //     show: false,
-        //     normal: {
-        //       color: '#5599E4'
-        //     }
-        //   },
-        //   zlevel: 1,
-        //   label: {
-        //     show: true,
-        //     formatter: (args) => {
-        //       return args.value[2] + '\n' + args.name
-        //     },
-        //     offset: [0, 30]
-        //   }
-        // }
       }
       const chart = echarts.init(document.getElementById(this.id))
       chart.setOption(option)

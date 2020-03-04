@@ -1,1 +1,1214 @@
-{"全部": [{"name": "United States", "value": 1034}, {"name": "United Kingdom", "value": 112}, {"name": "China", "value": 72}, {"name": "Canada", "value": 71}, {"name": "Germany", "value": 38}, {"name": "Israel", "value": 38}, {"name": "Netherlands", "value": 38}, {"name": "India", "value": 32}, {"name": "Italy", "value": 31}, {"name": "Australia", "value": 30}, {"name": "Hong Kong", "value": 27}, {"name": "Singapore", "value": 27}, {"name": "France", "value": 23}, {"name": "Switzerland", "value": 21}, {"name": "Taiwan", "value": 21}, {"name": "Spain", "value": 19}, {"name": "Belgium", "value": 11}, {"name": "Japan", "value": 11}, {"name": "New Zealand", "value": 9}, {"name": "Turkey", "value": 9}, {"name": "Austria", "value": 8}, {"name": "Finland", "value": 8}, {"name": "Denmark", "value": 7}, {"name": "Sweden", "value": 7}, {"name": "Greece", "value": 6}, {"name": "Czech Republic", "value": 5}, {"name": "Portugal", "value": 5}, {"name": "Bulgaria", "value": 4}, {"name": "Malaysia", "value": 4}, {"name": "Mexico", "value": 4}, {"name": "Poland", "value": 4}, {"name": "South Korea", "value": 4}, {"name": "Norway", "value": 3}, {"name": "Brazil", "value": 2}, {"name": "Cyprus", "value": 2}, {"name": "Thailand", "value": 2}, {"name": "Bahrain", "value": 1}, {"name": "Hungary", "value": 1}, {"name": "Iceland", "value": 1}, {"name": "Pakistan", "value": 1}, {"name": "Romania", "value": 1}, {"name": "Russia", "value": 1}, {"name": "Saudi Arabia", "value": 1}, {"name": "South Africa", "value": 1}, {"name": "Ukraine", "value": 1}],"\u6570\u636e\u6316\u6398": [{"name": "United States", "value": 387}, {"name": "United Kingdom", "value": 41}, {"name": "China", "value": 24}, {"name": "Canada", "value": 23}, {"name": "Germany", "value": 15}, {"name": "Hong Kong", "value": 13}, {"name": "Israel", "value": 11}, {"name": "Netherlands", "value": 10}, {"name": "Singapore", "value": 10}, {"name": "Australia", "value": 8}, {"name": "France", "value": 7}, {"name": "India", "value": 7}, {"name": "Italy", "value": 7}, {"name": "Japan", "value": 7}, {"name": "Spain", "value": 7}, {"name": "New Zealand", "value": 4}, {"name": "Taiwan", "value": 4}, {"name": "Finland", "value": 3}, {"name": "Mexico", "value": 3}, {"name": "Austria", "value": 2}, {"name": "Portugal", "value": 2}, {"name": "Sweden", "value": 2}, {"name": "Switzerland", "value": 2}, {"name": "Turkey", "value": 2}, {"name": "Belgium", "value": 1}, {"name": "Brazil", "value": 1}, {"name": "Czech Republic", "value": 1}, {"name": "Denmark", "value": 1}, {"name": "Greece", "value": 1}, {"name": "Iceland", "value": 1}, {"name": "Poland", "value": 1}, {"name": "Romania", "value": 1}, {"name": "South Korea", "value": 1}, {"name": "Thailand", "value": 1}], "\u81ea\u7136\u8bed\u8a00\u5904\u7406": [{"name": "United States", "value": 330}, {"name": "United Kingdom", "value": 25}, {"name": "Canada", "value": 17}, {"name": "China", "value": 17}, {"name": "Hong Kong", "value": 10}, {"name": "Singapore", "value": 10}, {"name": "Germany", "value": 9}, {"name": "Israel", "value": 9}, {"name": "Australia", "value": 8}, {"name": "Netherlands", "value": 8}, {"name": "India", "value": 7}, {"name": "Italy", "value": 7}, {"name": "France", "value": 6}, {"name": "Japan", "value": 6}, {"name": "Spain", "value": 5}, {"name": "New Zealand", "value": 4}, {"name": "Taiwan", "value": 4}, {"name": "Finland", "value": 3}, {"name": "Austria", "value": 2}, {"name": "Mexico", "value": 2}, {"name": "Sweden", "value": 2}, {"name": "Switzerland", "value": 2}, {"name": "Turkey", "value": 2}, {"name": "Czech Republic", "value": 1}, {"name": "Denmark", "value": 1}, {"name": "Greece", "value": 1}, {"name": "Iceland", "value": 1}, {"name": "Poland", "value": 1}, {"name": "Portugal", "value": 1}, {"name": "Romania", "value": 1}, {"name": "South Korea", "value": 1}, {"name": "Thailand", "value": 1}], "\u673a\u5668\u5b66\u4e60": [{"name": "United States", "value": 304}, {"name": "United Kingdom", "value": 23}, {"name": "Canada", "value": 18}, {"name": "China", "value": 18}, {"name": "Germany", "value": 13}, {"name": "Israel", "value": 9}, {"name": "Hong Kong", "value": 7}, {"name": "Japan", "value": 7}, {"name": "Singapore", "value": 7}, {"name": "Spain", "value": 7}, {"name": "Australia", "value": 6}, {"name": "France", "value": 6}, {"name": "Italy", "value": 6}, {"name": "India", "value": 5}, {"name": "Netherlands", "value": 5}, {"name": "Taiwan", "value": 5}, {"name": "New Zealand", "value": 4}, {"name": "Switzerland", "value": 4}, {"name": "Austria", "value": 3}, {"name": "Finland", "value": 3}, {"name": "Mexico", "value": 3}, {"name": "Belgium", "value": 2}, {"name": "Portugal", "value": 2}, {"name": "Turkey", "value": 2}, {"name": "Czech Republic", "value": 1}, {"name": "Greece", "value": 1}, {"name": "Iceland", "value": 1}, {"name": "Poland", "value": 1}, {"name": "Romania", "value": 1}, {"name": "Sweden", "value": 1}, {"name": "Thailand", "value": 1}], "\u82af\u7247\u6280\u672f": [{"name": "United States", "value": 278}, {"name": "United Kingdom", "value": 25}, {"name": "China", "value": 19}, {"name": "Canada", "value": 14}, {"name": "Germany", "value": 13}, {"name": "Hong Kong", "value": 9}, {"name": "Netherlands", "value": 8}, {"name": "Israel", "value": 7}, {"name": "Singapore", "value": 7}, {"name": "India", "value": 6}, {"name": "Italy", "value": 6}, {"name": "Spain", "value": 6}, {"name": "Australia", "value": 5}, {"name": "Austria", "value": 4}, {"name": "Japan", "value": 4}, {"name": "Taiwan", "value": 4}, {"name": "Finland", "value": 3}, {"name": "France", "value": 3}, {"name": "Mexico", "value": 3}, {"name": "New Zealand", "value": 3}, {"name": "Sweden", "value": 2}, {"name": "Switzerland", "value": 2}, {"name": "Thailand", "value": 2}, {"name": "Belgium", "value": 1}, {"name": "Czech Republic", "value": 1}, {"name": "Greece", "value": 1}, {"name": "Iceland", "value": 1}, {"name": "Poland", "value": 1}, {"name": "Portugal", "value": 1}, {"name": "Romania", "value": 1}, {"name": "South Korea", "value": 1}, {"name": "Turkey", "value": 1}], "\u4eba\u673a\u4ea4\u4e92": [{"name": "United States", "value": 196}, {"name": "United Kingdom", "value": 19}, {"name": "China", "value": 13}, {"name": "Canada", "value": 8}, {"name": "Singapore", "value": 7}, {"name": "Germany", "value": 6}, {"name": "Hong Kong", "value": 6}, {"name": "Netherlands", "value": 6}, {"name": "Israel", "value": 5}, {"name": "Taiwan", "value": 5}, {"name": "Italy", "value": 4}, {"name": "Japan", "value": 4}, {"name": "Spain", "value": 4}, {"name": "Australia", "value": 3}, {"name": "Austria", "value": 3}, {"name": "Finland", "value": 3}, {"name": "India", "value": 3}, {"name": "Belgium", "value": 2}, {"name": "France", "value": 2}, {"name": "Mexico", "value": 2}, {"name": "New Zealand", "value": 2}, {"name": "Switzerland", "value": 2}, {"name": "Czech Republic", "value": 1}, {"name": "Greece", "value": 1}, {"name": "Iceland", "value": 1}, {"name": "Portugal", "value": 1}, {"name": "Romania", "value": 1}, {"name": "Sweden", "value": 1}, {"name": "Turkey", "value": 1}], "\u77e5\u8bc6\u5de5\u7a0b": [{"name": "United States", "value": 131}, {"name": "United Kingdom", "value": 11}, {"name": "China", "value": 7}, {"name": "Hong Kong", "value": 4}, {"name": "Singapore", "value": 4}, {"name": "Australia", "value": 3}, {"name": "Finland", "value": 3}, {"name": "New Zealand", "value": 3}, {"name": "Spain", "value": 3}, {"name": "Taiwan", "value": 3}, {"name": "Canada", "value": 2}, {"name": "Germany", "value": 2}, {"name": "India", "value": 2}, {"name": "Italy", "value": 2}, {"name": "Netherlands", "value": 2}, {"name": "Austria", "value": 1}, {"name": "Iceland", "value": 1}, {"name": "Israel", "value": 1}, {"name": "Japan", "value": 1}, {"name": "Poland", "value": 1}, {"name": "Romania", "value": 1}, {"name": "Turkey", "value": 1}], "\u8bed\u97f3\u8bc6\u522b": [{"name": "United States", "value": 88}, {"name": "China", "value": 7}, {"name": "Canada", "value": 6}, {"name": "Japan", "value": 4}, {"name": "United Kingdom", "value": 4}, {"name": "Finland", "value": 3}, {"name": "Hong Kong", "value": 3}, {"name": "Israel", "value": 3}, {"name": "New Zealand", "value": 3}, {"name": "Singapore", "value": 3}, {"name": "Taiwan", "value": 3}, {"name": "France", "value": 2}, {"name": "Italy", "value": 2}, {"name": "Netherlands", "value": 2}, {"name": "Czech Republic", "value": 1}, {"name": "Germany", "value": 1}, {"name": "India", "value": 1}, {"name": "Spain", "value": 1}], "\u8ba1\u7b97\u673a\u89c6\u89c9": [{"name": "United States", "value": 48}, {"name": "United Kingdom", "value": 5}, {"name": "Germany", "value": 4}, {"name": "Canada", "value": 3}, {"name": "Israel", "value": 2}, {"name": "Austria", "value": 1}, {"name": "Belgium", "value": 1}, {"name": "China", "value": 1}, {"name": "Czech Republic", "value": 1}, {"name": "France", "value": 1}, {"name": "Hong Kong", "value": 1}, {"name": "Italy", "value": 1}, {"name": "Japan", "value": 1}, {"name": "Netherlands", "value": 1}, {"name": "Portugal", "value": 1}, {"name": "Romania", "value": 1}, {"name": "Spain", "value": 1}], "\u4fe1\u606f\u68c0\u7d22\u4e0e\u63a8\u8350": [{"name": "United States", "value": 18}, {"name": "United Kingdom", "value": 4}, {"name": "Canada", "value": 2}, {"name": "China", "value": 1}, {"name": "Finland", "value": 1}, {"name": "Japan", "value": 1}, {"name": "Spain", "value": 1}], "\u673a\u5668\u4eba": [{"name": "United States", "value": 12}, {"name": "Australia", "value": 2}, {"name": "Canada", "value": 2}, {"name": "Italy", "value": 2}, {"name": "Germany", "value": 1}, {"name": "Spain", "value": 1}, {"name": "Switzerland", "value": 1}], "\u6570\u636e\u5e93": [{"name": "United States", "value": 15}, {"name": "United Kingdom", "value": 2}, {"name": "Netherlands", "value": 1}, {"name": "Singapore", "value": 1}], "\u53ef\u89c6\u5316": [{"name": "United States", "value": 9}, {"name": "China", "value": 2}, {"name": "Canada", "value": 1}, {"name": "Germany", "value": 1}], "\u5b89\u5168\u4e0e\u9690\u79c1": [{"name": "United States", "value": 9}, {"name": "Canada", "value": 1}, {"name": "Hong Kong", "value": 1}, {"name": "Israel", "value": 1}, {"name": "Mexico", "value": 1}, {"name": "United Kingdom", "value": 1}], "\u8ba1\u7b97\u673a\u56fe\u5f62": [{"name": "United States", "value": 2}, {"name": "Canada", "value": 1}, {"name": "China", "value": 1}, {"name": "Hong Kong", "value": 1}, {"name": "Israel", "value": 1}], "\u8ba1\u7b97\u673a\u7f51\u7edc": [{"name": "United States", "value": 2}, {"name": "Canada", "value": 1}], "\u7269\u8054\u7f51": [{"name": "Finland", "value": 1}], "\u591a\u5a92\u4f53": [{"name": "United States", "value": 1}], "\u8ba1\u7b97\u673a\u7cfb\u7edf": [{"name": "United States", "value": 1}]}
+{
+  "全部": [
+    {
+      "name": "United States",
+      "value": 1034
+    },
+    {
+      "name": "United Kingdom",
+      "value": 112
+    },
+    {
+      "name": "China",
+      "value": 72
+    },
+    {
+      "name": "Canada",
+      "value": 71
+    },
+    {
+      "name": "Germany",
+      "value": 38
+    },
+    {
+      "name": "Israel",
+      "value": 38
+    },
+    {
+      "name": "Netherlands",
+      "value": 38
+    },
+    {
+      "name": "India",
+      "value": 32
+    },
+    {
+      "name": "Italy",
+      "value": 31
+    },
+    {
+      "name": "Australia",
+      "value": 30
+    },
+    {
+      "name": "Hong Kong",
+      "value": 27
+    },
+    {
+      "name": "Singapore",
+      "value": 27
+    },
+    {
+      "name": "France",
+      "value": 23
+    },
+    {
+      "name": "Switzerland",
+      "value": 21
+    },
+    {
+      "name": "Taiwan",
+      "value": 21
+    },
+    {
+      "name": "Spain",
+      "value": 19
+    },
+    {
+      "name": "Belgium",
+      "value": 11
+    },
+    {
+      "name": "Japan",
+      "value": 11
+    },
+    {
+      "name": "New Zealand",
+      "value": 9
+    },
+    {
+      "name": "Turkey",
+      "value": 9
+    },
+    {
+      "name": "Austria",
+      "value": 8
+    },
+    {
+      "name": "Finland",
+      "value": 8
+    },
+    {
+      "name": "Denmark",
+      "value": 7
+    },
+    {
+      "name": "Sweden",
+      "value": 7
+    },
+    {
+      "name": "Greece",
+      "value": 6
+    },
+    {
+      "name": "Czech Republic",
+      "value": 5
+    },
+    {
+      "name": "Portugal",
+      "value": 5
+    },
+    {
+      "name": "Bulgaria",
+      "value": 4
+    },
+    {
+      "name": "Malaysia",
+      "value": 4
+    },
+    {
+      "name": "Mexico",
+      "value": 4
+    },
+    {
+      "name": "Poland",
+      "value": 4
+    },
+    {
+      "name": "South Korea",
+      "value": 4
+    },
+    {
+      "name": "Norway",
+      "value": 3
+    },
+    {
+      "name": "Brazil",
+      "value": 2
+    },
+    {
+      "name": "Cyprus",
+      "value": 2
+    },
+    {
+      "name": "Thailand",
+      "value": 2
+    }
+  ],
+  "数据挖掘": [
+    {
+      "name": "",
+      "value": 400
+    },
+    {
+      "name": "United States",
+      "value": 387
+    },
+    {
+      "name": "United Kingdom",
+      "value": 41
+    },
+    {
+      "name": "China",
+      "value": 24
+    },
+    {
+      "name": "Canada",
+      "value": 23
+    },
+    {
+      "name": "Germany",
+      "value": 15
+    },
+    {
+      "name": "Hong Kong",
+      "value": 13
+    },
+    {
+      "name": "Israel",
+      "value": 11
+    },
+    {
+      "name": "Netherlands",
+      "value": 10
+    },
+    {
+      "name": "Singapore",
+      "value": 10
+    },
+    {
+      "name": "Australia",
+      "value": 8
+    },
+    {
+      "name": "France",
+      "value": 7
+    },
+    {
+      "name": "India",
+      "value": 7
+    },
+    {
+      "name": "Italy",
+      "value": 7
+    },
+    {
+      "name": "Japan",
+      "value": 7
+    },
+    {
+      "name": "Spain",
+      "value": 7
+    },
+    {
+      "name": "New Zealand",
+      "value": 4
+    },
+    {
+      "name": "Taiwan",
+      "value": 4
+    },
+    {
+      "name": "Finland",
+      "value": 3
+    },
+    {
+      "name": "Mexico",
+      "value": 3
+    },
+    {
+      "name": "Austria",
+      "value": 2
+    },
+    {
+      "name": "Portugal",
+      "value": 2
+    },
+    {
+      "name": "Sweden",
+      "value": 2
+    },
+    {
+      "name": "Switzerland",
+      "value": 2
+    },
+    {
+      "name": "Turkey",
+      "value": 2
+    },
+    {
+      "name": "Belgium",
+      "value": 1
+    },
+    {
+      "name": "Brazil",
+      "value": 1
+    },
+    {
+      "name": "Czech Republic",
+      "value": 1
+    },
+    {
+      "name": "Denmark",
+      "value": 1
+    },
+    {
+      "name": "Greece",
+      "value": 1
+    },
+    {
+      "name": "Iceland",
+      "value": 1
+    },
+    {
+      "name": "Poland",
+      "value": 1
+    },
+    {
+      "name": "Romania",
+      "value": 1
+    },
+    {
+      "name": "South Korea",
+      "value": 1
+    },
+    {
+      "name": "Thailand",
+      "value": 1
+    }
+  ],
+  "自然语言处理": [
+    {
+      "name": "United States",
+      "value": 330
+    },
+    {
+      "name": "",
+      "value": 306
+    },
+    {
+      "name": "United Kingdom",
+      "value": 25
+    },
+    {
+      "name": "Canada",
+      "value": 17
+    },
+    {
+      "name": "China",
+      "value": 17
+    },
+    {
+      "name": "Hong Kong",
+      "value": 10
+    },
+    {
+      "name": "Singapore",
+      "value": 10
+    },
+    {
+      "name": "Germany",
+      "value": 9
+    },
+    {
+      "name": "Israel",
+      "value": 9
+    },
+    {
+      "name": "Australia",
+      "value": 8
+    },
+    {
+      "name": "Netherlands",
+      "value": 8
+    },
+    {
+      "name": "India",
+      "value": 7
+    },
+    {
+      "name": "Italy",
+      "value": 7
+    },
+    {
+      "name": "France",
+      "value": 6
+    },
+    {
+      "name": "Japan",
+      "value": 6
+    },
+    {
+      "name": "Spain",
+      "value": 5
+    },
+    {
+      "name": "New Zealand",
+      "value": 4
+    },
+    {
+      "name": "Taiwan",
+      "value": 4
+    },
+    {
+      "name": "Finland",
+      "value": 3
+    },
+    {
+      "name": "Austria",
+      "value": 2
+    },
+    {
+      "name": "Mexico",
+      "value": 2
+    },
+    {
+      "name": "Sweden",
+      "value": 2
+    },
+    {
+      "name": "Switzerland",
+      "value": 2
+    },
+    {
+      "name": "Turkey",
+      "value": 2
+    },
+    {
+      "name": "Czech Republic",
+      "value": 1
+    },
+    {
+      "name": "Denmark",
+      "value": 1
+    },
+    {
+      "name": "Greece",
+      "value": 1
+    },
+    {
+      "name": "Iceland",
+      "value": 1
+    },
+    {
+      "name": "Poland",
+      "value": 1
+    },
+    {
+      "name": "Portugal",
+      "value": 1
+    },
+    {
+      "name": "Romania",
+      "value": 1
+    },
+    {
+      "name": "South Korea",
+      "value": 1
+    },
+    {
+      "name": "Thailand",
+      "value": 1
+    }
+  ],
+  "机器学习": [
+    {
+      "name": "",
+      "value": 323
+    },
+    {
+      "name": "United States",
+      "value": 304
+    },
+    {
+      "name": "United Kingdom",
+      "value": 23
+    },
+    {
+      "name": "Canada",
+      "value": 18
+    },
+    {
+      "name": "China",
+      "value": 18
+    },
+    {
+      "name": "Germany",
+      "value": 13
+    },
+    {
+      "name": "Israel",
+      "value": 9
+    },
+    {
+      "name": "Hong Kong",
+      "value": 7
+    },
+    {
+      "name": "Japan",
+      "value": 7
+    },
+    {
+      "name": "Singapore",
+      "value": 7
+    },
+    {
+      "name": "Spain",
+      "value": 7
+    },
+    {
+      "name": "Australia",
+      "value": 6
+    },
+    {
+      "name": "France",
+      "value": 6
+    },
+    {
+      "name": "Italy",
+      "value": 6
+    },
+    {
+      "name": "India",
+      "value": 5
+    },
+    {
+      "name": "Netherlands",
+      "value": 5
+    },
+    {
+      "name": "Taiwan",
+      "value": 5
+    },
+    {
+      "name": "New Zealand",
+      "value": 4
+    },
+    {
+      "name": "Switzerland",
+      "value": 4
+    },
+    {
+      "name": "Austria",
+      "value": 3
+    },
+    {
+      "name": "Finland",
+      "value": 3
+    },
+    {
+      "name": "Mexico",
+      "value": 3
+    },
+    {
+      "name": "Belgium",
+      "value": 2
+    },
+    {
+      "name": "Portugal",
+      "value": 2
+    },
+    {
+      "name": "Turkey",
+      "value": 2
+    },
+    {
+      "name": "Czech Republic",
+      "value": 1
+    },
+    {
+      "name": "Greece",
+      "value": 1
+    },
+    {
+      "name": "Iceland",
+      "value": 1
+    },
+    {
+      "name": "Poland",
+      "value": 1
+    },
+    {
+      "name": "Romania",
+      "value": 1
+    },
+    {
+      "name": "Sweden",
+      "value": 1
+    },
+    {
+      "name": "Thailand",
+      "value": 1
+    }
+  ],
+  "芯片技术": [
+    {
+      "name": "",
+      "value": 317
+    },
+    {
+      "name": "United States",
+      "value": 278
+    },
+    {
+      "name": "United Kingdom",
+      "value": 25
+    },
+    {
+      "name": "China",
+      "value": 19
+    },
+    {
+      "name": "Canada",
+      "value": 14
+    },
+    {
+      "name": "Germany",
+      "value": 13
+    },
+    {
+      "name": "Hong Kong",
+      "value": 9
+    },
+    {
+      "name": "Netherlands",
+      "value": 8
+    },
+    {
+      "name": "Israel",
+      "value": 7
+    },
+    {
+      "name": "Singapore",
+      "value": 7
+    },
+    {
+      "name": "India",
+      "value": 6
+    },
+    {
+      "name": "Italy",
+      "value": 6
+    },
+    {
+      "name": "Spain",
+      "value": 6
+    },
+    {
+      "name": "Australia",
+      "value": 5
+    },
+    {
+      "name": "Austria",
+      "value": 4
+    },
+    {
+      "name": "Japan",
+      "value": 4
+    },
+    {
+      "name": "Taiwan",
+      "value": 4
+    },
+    {
+      "name": "Finland",
+      "value": 3
+    },
+    {
+      "name": "France",
+      "value": 3
+    },
+    {
+      "name": "Mexico",
+      "value": 3
+    },
+    {
+      "name": "New Zealand",
+      "value": 3
+    },
+    {
+      "name": "Sweden",
+      "value": 2
+    },
+    {
+      "name": "Switzerland",
+      "value": 2
+    },
+    {
+      "name": "Thailand",
+      "value": 2
+    },
+    {
+      "name": "Belgium",
+      "value": 1
+    },
+    {
+      "name": "Czech Republic",
+      "value": 1
+    },
+    {
+      "name": "Greece",
+      "value": 1
+    },
+    {
+      "name": "Iceland",
+      "value": 1
+    },
+    {
+      "name": "Poland",
+      "value": 1
+    },
+    {
+      "name": "Portugal",
+      "value": 1
+    },
+    {
+      "name": "Romania",
+      "value": 1
+    },
+    {
+      "name": "South Korea",
+      "value": 1
+    },
+    {
+      "name": "Turkey",
+      "value": 1
+    }
+  ],
+  "人机交互": [
+    {
+      "name": "United States",
+      "value": 196
+    },
+    {
+      "name": "",
+      "value": 193
+    },
+    {
+      "name": "United Kingdom",
+      "value": 19
+    },
+    {
+      "name": "China",
+      "value": 13
+    },
+    {
+      "name": "Canada",
+      "value": 8
+    },
+    {
+      "name": "Singapore",
+      "value": 7
+    },
+    {
+      "name": "Germany",
+      "value": 6
+    },
+    {
+      "name": "Hong Kong",
+      "value": 6
+    },
+    {
+      "name": "Netherlands",
+      "value": 6
+    },
+    {
+      "name": "Israel",
+      "value": 5
+    },
+    {
+      "name": "Taiwan",
+      "value": 5
+    },
+    {
+      "name": "Italy",
+      "value": 4
+    },
+    {
+      "name": "Japan",
+      "value": 4
+    },
+    {
+      "name": "Spain",
+      "value": 4
+    },
+    {
+      "name": "Australia",
+      "value": 3
+    },
+    {
+      "name": "Austria",
+      "value": 3
+    },
+    {
+      "name": "Finland",
+      "value": 3
+    },
+    {
+      "name": "India",
+      "value": 3
+    },
+    {
+      "name": "Belgium",
+      "value": 2
+    },
+    {
+      "name": "France",
+      "value": 2
+    },
+    {
+      "name": "Mexico",
+      "value": 2
+    },
+    {
+      "name": "New Zealand",
+      "value": 2
+    },
+    {
+      "name": "Switzerland",
+      "value": 2
+    },
+    {
+      "name": "Czech Republic",
+      "value": 1
+    },
+    {
+      "name": "Greece",
+      "value": 1
+    },
+    {
+      "name": "Iceland",
+      "value": 1
+    },
+    {
+      "name": "Portugal",
+      "value": 1
+    },
+    {
+      "name": "Romania",
+      "value": 1
+    },
+    {
+      "name": "Sweden",
+      "value": 1
+    },
+    {
+      "name": "Turkey",
+      "value": 1
+    }
+  ],
+  "知识工程": [
+    {
+      "name": "United States",
+      "value": 131
+    },
+    {
+      "name": "",
+      "value": 88
+    },
+    {
+      "name": "United Kingdom",
+      "value": 11
+    },
+    {
+      "name": "China",
+      "value": 7
+    },
+    {
+      "name": "Hong Kong",
+      "value": 4
+    },
+    {
+      "name": "Singapore",
+      "value": 4
+    },
+    {
+      "name": "Australia",
+      "value": 3
+    },
+    {
+      "name": "Finland",
+      "value": 3
+    },
+    {
+      "name": "New Zealand",
+      "value": 3
+    },
+    {
+      "name": "Spain",
+      "value": 3
+    },
+    {
+      "name": "Taiwan",
+      "value": 3
+    },
+    {
+      "name": "Canada",
+      "value": 2
+    },
+    {
+      "name": "Germany",
+      "value": 2
+    },
+    {
+      "name": "India",
+      "value": 2
+    },
+    {
+      "name": "Italy",
+      "value": 2
+    },
+    {
+      "name": "Netherlands",
+      "value": 2
+    },
+    {
+      "name": "Austria",
+      "value": 1
+    },
+    {
+      "name": "Iceland",
+      "value": 1
+    },
+    {
+      "name": "Israel",
+      "value": 1
+    },
+    {
+      "name": "Japan",
+      "value": 1
+    },
+    {
+      "name": "Poland",
+      "value": 1
+    },
+    {
+      "name": "Romania",
+      "value": 1
+    },
+    {
+      "name": "Turkey",
+      "value": 1
+    }
+  ],
+  "语音识别": [
+    {
+      "name": "United States",
+      "value": 88
+    },
+    {
+      "name": "",
+      "value": 68
+    },
+    {
+      "name": "China",
+      "value": 7
+    },
+    {
+      "name": "Canada",
+      "value": 6
+    },
+    {
+      "name": "Japan",
+      "value": 4
+    },
+    {
+      "name": "United Kingdom",
+      "value": 4
+    },
+    {
+      "name": "Finland",
+      "value": 3
+    },
+    {
+      "name": "Hong Kong",
+      "value": 3
+    },
+    {
+      "name": "Israel",
+      "value": 3
+    },
+    {
+      "name": "New Zealand",
+      "value": 3
+    },
+    {
+      "name": "Singapore",
+      "value": 3
+    },
+    {
+      "name": "Taiwan",
+      "value": 3
+    },
+    {
+      "name": "France",
+      "value": 2
+    },
+    {
+      "name": "Italy",
+      "value": 2
+    },
+    {
+      "name": "Netherlands",
+      "value": 2
+    },
+    {
+      "name": "Czech Republic",
+      "value": 1
+    },
+    {
+      "name": "Germany",
+      "value": 1
+    },
+    {
+      "name": "India",
+      "value": 1
+    },
+    {
+      "name": "Spain",
+      "value": 1
+    }
+  ],
+  "计算机视觉": [
+    {
+      "name": "United States",
+      "value": 48
+    },
+    {
+      "name": "United Kingdom",
+      "value": 5
+    },
+    {
+      "name": "Germany",
+      "value": 4
+    },
+    {
+      "name": "Canada",
+      "value": 3
+    },
+    {
+      "name": "Israel",
+      "value": 2
+    },
+    {
+      "name": "Austria",
+      "value": 1
+    },
+    {
+      "name": "Belgium",
+      "value": 1
+    },
+    {
+      "name": "China",
+      "value": 1
+    },
+    {
+      "name": "Czech Republic",
+      "value": 1
+    },
+    {
+      "name": "France",
+      "value": 1
+    },
+    {
+      "name": "Hong Kong",
+      "value": 1
+    },
+    {
+      "name": "Italy",
+      "value": 1
+    },
+    {
+      "name": "Japan",
+      "value": 1
+    },
+    {
+      "name": "Netherlands",
+      "value": 1
+    },
+    {
+      "name": "Portugal",
+      "value": 1
+    },
+    {
+      "name": "Romania",
+      "value": 1
+    },
+    {
+      "name": "Spain",
+      "value": 1
+    }
+  ],
+  "信息检索与推荐": [
+    {
+      "name": "United States",
+      "value": 18
+    },
+    {
+      "name": "",
+      "value": 17
+    },
+    {
+      "name": "United Kingdom",
+      "value": 4
+    },
+    {
+      "name": "Canada",
+      "value": 2
+    },
+    {
+      "name": "China",
+      "value": 1
+    },
+    {
+      "name": "Finland",
+      "value": 1
+    },
+    {
+      "name": "Japan",
+      "value": 1
+    },
+    {
+      "name": "Spain",
+      "value": 1
+    }
+  ],
+  "机器人": [
+    {
+      "name": "United States",
+      "value": 12
+    },
+    {
+      "name": "Australia",
+      "value": 2
+    },
+    {
+      "name": "Canada",
+      "value": 2
+    },
+    {
+      "name": "Italy",
+      "value": 2
+    },
+    {
+      "name": "Germany",
+      "value": 1
+    },
+    {
+      "name": "Spain",
+      "value": 1
+    },
+    {
+      "name": "Switzerland",
+      "value": 1
+    }
+  ],
+  "数据库": [
+    {
+      "name": "United States",
+      "value": 15
+    },
+    {
+      "name": "",
+      "value": 9
+    },
+    {
+      "name": "United Kingdom",
+      "value": 2
+    },
+    {
+      "name": "Netherlands",
+      "value": 1
+    },
+    {
+      "name": "Singapore",
+      "value": 1
+    }
+  ],
+  "可视化": [
+    {
+      "name": "United States",
+      "value": 9
+    },
+    {
+      "name": "China",
+      "value": 2
+    },
+    {
+      "name": "Canada",
+      "value": 1
+    },
+    {
+      "name": "Germany",
+      "value": 1
+    }
+  ],
+  "安全与隐私": [
+    {
+      "name": "United States",
+      "value": 9
+    },
+    {
+      "name": "Canada",
+      "value": 1
+    },
+    {
+      "name": "Hong Kong",
+      "value": 1
+    },
+    {
+      "name": "Israel",
+      "value": 1
+    },
+    {
+      "name": "Mexico",
+      "value": 1
+    },
+    {
+      "name": "United Kingdom",
+      "value": 1
+    }
+  ],
+  "计算机图形": [
+    {
+      "name": "United States",
+      "value": 2
+    },
+    {
+      "name": "Canada",
+      "value": 1
+    },
+    {
+      "name": "China",
+      "value": 1
+    },
+    {
+      "name": "Hong Kong",
+      "value": 1
+    },
+    {
+      "name": "Israel",
+      "value": 1
+    }
+  ],
+  "计算机网络": [
+    {
+      "name": "United States",
+      "value": 2
+    },
+    {
+      "name": "Canada",
+      "value": 1
+    }
+  ]
+}

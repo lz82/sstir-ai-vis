@@ -25,7 +25,7 @@
 <script>
 import ChartMap from '@/components/charts/map'
 import AI_INDUSTRY from '@/utils/constant'
-import MockData from '@/mock-data/expert-industry'
+import mapData from './data/data'
 
 export default {
   name: 'ReportExpertIndustry',
@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       aiIndustry: AI_INDUSTRY,
-      mapData: MockData
+      mapData: mapData
     }
   }
 }

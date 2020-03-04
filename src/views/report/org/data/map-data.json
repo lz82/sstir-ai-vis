@@ -1,7 +1,7 @@
 {
   "全部": [
     {
-      "name": "USA",
+      "name": "United States",
       "value": 808
     },
     {
@@ -139,46 +139,11 @@
     {
       "name": "Cyprus",
       "value": 2
-    },
-    {
-      "name": "Hungary",
-      "value": 1
-    },
-    {
-      "name": "Iceland",
-      "value": 1
-    },
-    {
-      "name": "Pakistan",
-      "value": 1
-    },
-    {
-      "name": "Romania",
-      "value": 1
-    },
-    {
-      "name": "Russia",
-      "value": 1
-    },
-    {
-      "name": "Saudi Arabia",
-      "value": 1
-    },
-    {
-      "name": "South Africa",
-      "value": 1
-    },
-    {
-      "name": "Thailand",
-      "value": 1
-    },
-    {
-      "name": "Ukraine",
-      "value": 1
     }
-  ],"院校": [
+  ],
+  "院校": [
     {
-      "name": "USA",
+      "name": "United States",
       "value": 531
     },
     {
@@ -304,43 +269,11 @@
     {
       "name": "Sweden",
       "value": 2
-    },
-    {
-      "name": "Belgium",
-      "value": 1
-    },
-    {
-      "name": "Iceland",
-      "value": 1
-    },
-    {
-      "name": "Malaysia",
-      "value": 1
-    },
-    {
-      "name": "Pakistan",
-      "value": 1
-    },
-    {
-      "name": "Romania",
-      "value": 1
-    },
-    {
-      "name": "Saudi Arabia",
-      "value": 1
-    },
-    {
-      "name": "South Africa",
-      "value": 1
-    },
-    {
-      "name": "Thailand",
-      "value": 1
     }
   ],
   "非院校": [
     {
-      "name": "USA",
+      "name": "United States",
       "value": 277
     },
     {
@@ -434,34 +367,6 @@
     {
       "name": "Portugal",
       "value": 2
-    },
-    {
-      "name": "Czech Republic",
-      "value": 1
-    },
-    {
-      "name": "Greece",
-      "value": 1
-    },
-    {
-      "name": "Hungary",
-      "value": 1
-    },
-    {
-      "name": "Norway",
-      "value": 1
-    },
-    {
-      "name": "Russia",
-      "value": 1
-    },
-    {
-      "name": "South Korea",
-      "value": 1
-    },
-    {
-      "name": "Ukraine",
-      "value": 1
     }
   ]
 }

@@ -8,7 +8,7 @@
       <el-card style="margin-bottom: 20px;">
         <div class="header-wrapper">
           <h3 class="chart-title">全球专家分布</h3>
-          <a href="./data/专家详情信息表字段.xlsx" download="全球专家领域分布数据.xlsx"
+          <a href="./data/excel/专家详情信息表字段.xlsx" download="全球专家领域分布数据.xlsx"
             ><i class="el-icon-download"
           /></a>
         </div>
@@ -21,7 +21,7 @@
       <el-card style="margin-bottom: 20px;">
         <div class="header-wrapper">
           <h3 class="chart-title">专家学历情况</h3>
-          <a href="./data/专家学历.xlsx" download="全球专家学历分布.xlsx"
+          <a href="./data/excel/专家学历分布.xlsx" download="专家学历分布.xlsx"
             ><i class="el-icon-download"
           /></a>
         </div>
@@ -35,7 +35,7 @@
       <el-card style="margin-bottom: 20px;">
         <div class="header-wrapper">
           <h3 class="chart-title">专家领域占比</h3>
-          <a href="./data/专家领域占比.xlsx" download="全球专家领域分布.xlsx"
+          <a href="./data/excel/专家领域分布.xlsx" download="专家领域分布.xlsx"
             ><i class="el-icon-download"
           /></a>
         </div>
@@ -77,9 +77,10 @@ export default {
           type: 'bar',
           stack: '总量',
           label: {
-            show: true,
+            show: false,
             position: 'insideRight'
           },
+          barMinWidth: 10,
           data: [724, 590, 584, 548, 368, 202, 155, 102, 37, 25, 20, 18, 13, 8, 3, 2, 1, 1]
         },
         {
@@ -87,9 +88,11 @@ export default {
           type: 'bar',
           stack: '总量',
           label: {
-            show: true,
-            position: 'insideRight'
+            show: false,
+            position: 'insideRight',
+            distance: -20
           },
+          barMinWidth: 10,
           data: [287, 220, 215, 211, 137, 75, 50, 28, 8, 13, 8, 8, 3, 2, 1, 0, 0, 0]
         }
       ],
@@ -109,9 +112,9 @@ export default {
         { name: '安全与隐私', value: 16 },
         { name: '计算机图形', value: 10 },
         { name: '计算机网络', value: 4 },
-        { name: '物联网', value: 2 },
-        { name: '多媒体', value: 1 },
-        { name: '计算机系统', value: 1 }
+        // { name: '物联网', value: 2 },
+        // { name: '多媒体', value: 1 },
+        // { name: '计算机系统', value: 1 }
       ]
     }
   },
