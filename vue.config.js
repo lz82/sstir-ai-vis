@@ -4,7 +4,7 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-const name = '世界人工智能专家&机构报告' // page title
+const name = '世界重点地区人工智能领域资源可视化分析' // page title
 
 // If your port is set to 80,
 // use administrator privileges to execute the command line.

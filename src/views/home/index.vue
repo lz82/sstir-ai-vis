@@ -42,7 +42,7 @@ export default {
 
   data() {
     return {
-      title: '世界重点地区人工智能领域资源可视化报告',
+      title: '世界重点地区人工智能领域资源可视化分析',
       tags: [
         {
           // 领域专家
