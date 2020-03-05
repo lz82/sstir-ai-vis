@@ -9,8 +9,8 @@
         <div class="header-wrapper">
           <h3 class="chart-title">全球专家分布</h3>
           <a
-            href="/data/excel/专家详情信息表字段.xlsx"
-            download="全球专家领域分布数据.xlsx"
+            href="/data/excel/全球专家分布.xlsx"
+            download="全球专家分布.xlsx"
             target="_blank"
             ><i class="el-icon-download"
           /></a>
