@@ -26,10 +26,10 @@
                     {{ scope.row.NAME }}
                   </div>
                   <div class="value-wrapper">
-                    <el-tooltip class="item" effect="light" content="G指标" placement="top-start">
+                    <el-tooltip class="item" effect="light" content="篇均被引" placement="top-start">
                       <div class="score">
-                        <div class="l l-b">G</div>
-                        <div class="r r-b">{{ scope.row.G_INDEX }}</div>
+                        <div class="l l-b">S</div>
+                        <div class="r r-b">{{ (scope.row.p_index - 0).toFixed(2) }}</div>
                       </div>
                     </el-tooltip>
 

@@ -35,8 +35,8 @@
           <p class="type">发表论文量</p>
         </div>
         <div class="cnt-info">
-          <p class="num">{{ gIndex }}</p>
-          <p class="type">G-index</p>
+          <p class="num">{{ pIndex.toFixed(2) }}</p>
+          <p class="type">篇均被引</p>
         </div>
         <div class="cnt-info">
           <p class="num">{{ hIndex }}</p>
@@ -124,7 +124,7 @@ export default {
       // totalIssues
       this.ciation = detail.NUM_CIATION
       // totalCitations
-      this.gIndex = detail.G_INDEX
+      this.pIndex = detail.p_index
       // top1Citations
       this.paperCnt = detail.NUM_PUBS
       // H指数
