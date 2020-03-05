@@ -57,16 +57,8 @@ export default {
           }
         },
         color: [
-          '#967adc',
-          '#fb8585',
-          '#f6bb42',
-          '#3dd5ff',
-          '#8cc152',
-          '#e7affe',
-          '#3bafda',
-          '#20cec8',
-          '#8dd1e1',
-          '#9cacf1'
+          '#dd2c00',
+          '#ffab91'
         ],
         legend: {
           data: this.legend
