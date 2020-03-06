@@ -16,8 +16,7 @@ export default {
 
   props: {
     legend: {
-      type: Array,
-      required: true
+      type: Array
     },
     mapData: {
       type: Object,
@@ -85,19 +84,19 @@ export default {
             {
               gte: 100,
               label: '> 100 人',
-              color: '#7f1100'
+              color: '#8c0d0d'
             },
             {
               gte: 30,
               lt: 100,
               label: '30 - 100 人',
-              color: '#ff5428'
+              color: '#ff7b69'
             },
             {
               gte: 1,
               lt: 30,
               label: '0 - 30 人',
-              color: '#ff8c71'
+              color: '#ffaa85'
             }
           ],
           show: !0
