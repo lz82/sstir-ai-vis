@@ -25,6 +25,10 @@ export default {
     unit: {
       type: String,
       default: '专家'
+    },
+    visualUnit: {
+      type: String,
+      default: '人'
     }
   },
 
@@ -83,19 +87,19 @@ export default {
           pieces: [
             {
               gte: 100,
-              label: '> 100 人',
+              label: `> 100 ${this.visualUnit}`,
               color: '#8c0d0d'
             },
             {
               gte: 30,
               lt: 100,
-              label: '30 - 100 人',
+              label: `30 - 100 ${this.visualUnit}`,
               color: '#ff7b69'
             },
             {
               gte: 1,
               lt: 30,
-              label: '0 - 30 人',
+              label: `0 - 30 ${this.visualUnit}`,
               color: '#ffaa85'
             }
           ],
