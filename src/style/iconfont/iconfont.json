@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1119326",
+      "name": "人员介绍",
+      "font_class": "renyuanjieshao",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "2087547",
+      "name": "教育",
+      "font_class": "jiaoyu",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "3775369",
+      "name": "论文题目",
+      "font_class": "lunwentimu",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
       "icon_id": "553322",
       "name": "所属职位",
       "font_class": "suoshuzhiwei",

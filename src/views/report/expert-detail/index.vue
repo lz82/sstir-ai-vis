@@ -35,7 +35,7 @@
           <p class="type">发表论文量</p>
         </div>
         <div class="cnt-info">
-          <p class="num">{{ pIndex.toFixed(2) }}</p>
+          <p class="num">{{ (pIndex - 0).toFixed(2) }}</p>
           <p class="type">篇均被引</p>
         </div>
         <div class="cnt-info">
@@ -46,24 +46,20 @@
     </div>
     <div class="space-10"></div>
     <el-card style="margin-bottom: 20px;">
-      <h3 class="chart-title">教育背景</h3>
-      <div class="chart-wrapper">
-        {{edu ? edu : '暂无'}}
-      </div>
+      <h3 class="chart-title"><i class="iconfont icon-jiaoyu" />&nbsp;教育背景</h3>
+      <div class="chart-wrapper desc" v-html="edu ? edu : '暂无'"></div>
     </el-card>
-     <div class="space-10"></div>
+    <div class="space-10"></div>
     <el-card style="margin-bottom: 20px;">
-      <h3 class="chart-title">个人简介</h3>
-      <div class="chart-wrapper">
-        {{desc ? desc : '暂无'}}
-      </div>
+      <h3 class="chart-title"><i class="iconfont icon-renyuanjieshao" />&nbsp;个人简介</h3>
+      <div class="chart-wrapper desc" v-html="desc ? desc : '暂无'"></div>
     </el-card>
-     <div class="space-10"></div>
+    <div class="space-10"></div>
     <el-card style="margin-bottom: 20px;">
-      <h3 class="chart-title">主要论文</h3>
-      <div class="chart-wrapper">
-        <el-table :data="paperList">
-          <el-table-column label="论文标题" prop="name" />
+      <h3 class="chart-title"><i class="iconfont icon-lunwentimu" />&nbsp;主要论文</h3>
+      <div class="chart-wrapper" style="width:100%;">
+        <el-table :data="paperList" max-height="500">
+          <el-table-column label="论文标题" prop="name" width="1150px" />
         </el-table>
       </div>
     </el-card>
@@ -73,6 +69,7 @@
 
 <script>
 import rankData from './data/rank-data'
+import titleData from './data/title-data'
 
 export default {
   name: 'ExpertDetail',
@@ -100,7 +97,8 @@ export default {
       hIndex: 0,
       desc: '',
       edu: '',
-      paperList: []
+      paperList: [],
+      pIndex: ''
     }
   },
 
@@ -111,7 +109,7 @@ export default {
   methods: {
     async initData() {
       const detail = rankData.find((item) => item.SID === this.id)
-      console.log(detail)
+      const titleObj = titleData.find((item) => item.SID === this.id)
       this.pic = detail.AVATAR
       this.name = detail.NAME
       // 机构
@@ -131,11 +129,19 @@ export default {
       this.hIndex = detail.H_INDEX
       this.desc = detail.BIO // 个人简介
       this.edu = detail.EDU
-      this.paperList = detail.TITLE_LIST.map(item => {
-        return {
-          name: item
-        }
-      })
+      if (titleObj && titleObj.TITLE_LIST && titleObj.TITLE_LIST.length > 0) {
+        this.paperList = titleObj.TITLE_LIST.map((item) => {
+          return {
+            name: item
+          }
+        })
+      } else {
+        this.paperList = detail.TITLE_LIST.map((item) => {
+          return {
+            name: item
+          }
+        })
+      }
     }
   }
 }
@@ -247,18 +253,24 @@ export default {
     font-size: 16px;
     font-weight: 600;
     position: relative;
-    padding-left: 10px;
+    color: #66b1ff;
+    // padding-left: 10px;
 
-    &:before {
-      position: absolute;
-      content: '';
-      left: 0;
-      top: 0;
-      // top: 9px;
-      width: 4px;
-      height: 20px;
-      background: #66b1ff;
-    }
+    // &:before {
+    //   position: absolute;
+    //   content: '';
+    //   left: 0;
+    //   top: 0;
+    //   // top: 9px;
+    //   width: 4px;
+    //   height: 20px;
+    //   background: #66b1ff;
+    // }
+  }
+
+  .desc {
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .space-10 {
