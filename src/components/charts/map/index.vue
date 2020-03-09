@@ -93,13 +93,13 @@ export default {
             {
               gte: 30,
               lt: 100,
-              label: `30 - 100 ${this.visualUnit}`,
+              label: `30 - 99 ${this.visualUnit}`,
               color: '#ff7b69'
             },
             {
               gte: 1,
               lt: 30,
-              label: `0 - 30 ${this.visualUnit}`,
+              label: `0 - 29 ${this.visualUnit}`,
               color: '#ffaa85'
             }
           ],
