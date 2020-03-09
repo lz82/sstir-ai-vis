@@ -53,7 +53,7 @@ router.beforeEach(async (to, from, next) => {
 
 router.afterEach((to) => {
   // 设置document title
-  document.title = to.meta.title || '世界人工智能专家&机构报告'
+  document.title = to.meta.title || '重点国别人工智能领域人才地图'
   // 结束进度条
   NProgress.done()
 })

@@ -5,16 +5,16 @@
         <h1 class="title">
           重点国别人工智能领域人才地图
         </h1>
-        <p class="org">
-          科技部国外人才研究中心
-        </p>
         <div class="btn-wrapper">
           <div class="btn" @click="onEnter">
             进入
           </div>
         </div>
+        <p class="org">
+          科技部国外人才研究中心
+        </p>
         <div class="footer">
-          <img :src="sstir" alt="" @click="onLogoClick">
+          <img :src="sstir" alt="" @click="onLogoClick" />
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@ export default {
   flex-flow: row;
   justify-content: center;
   .container {
-    width: 100%;
+    min-width: 1200px;
     max-width: 1920px;
     background: url(./img/bg.png) no-repeat;
     background-size: 100% 100%;
@@ -83,6 +83,7 @@ export default {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
+    position: relative;
     .right {
       flex: 0 0 35%;
       height: 100vh;
@@ -94,16 +95,19 @@ export default {
       font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB',
         'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
       .title {
-        padding-top: 40%;
-        font-size: 30px;
+        padding-top: 50%;
+        font-size: 26px;
         color: #fff;
         font-weight: 700;
+        letter-spacing: 2px;
+        text-shadow: 4px 1px 1px #000;
       }
       .org {
-        padding-top: 40px;
-        font-size: 24px;
-        color: #fff;
+        padding-top: 60px;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.6);
         font-weight: 400;
+        text-shadow: 2px 1px 1px #000;
       }
       .btn-wrapper {
         padding-top: 80px;
@@ -129,9 +133,16 @@ export default {
         position: absolute;
         bottom: 35px;
         left: 50%;
-        transform:translateX(-50%);
+        transform: translateX(-50%);
         cursor: pointer;
       }
+    }
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 18px;
     }
   }
 }
