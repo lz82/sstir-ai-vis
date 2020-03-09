@@ -13,17 +13,23 @@
             进入
           </div>
         </div>
+        <div class="footer">
+          <img :src="sstir" alt="" @click="onLogoClick">
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import sstir from './img/sstir.png'
+
 export default {
   name: 'Home',
 
   data() {
     return {
+      sstir,
       height: '100vh',
       width: '100%'
     }
@@ -50,6 +56,10 @@ export default {
   methods: {
     onEnter() {
       this.$router.push('/report/list')
+    },
+
+    onLogoClick() {
+      window.open('http://www.sstir.cn', '_blank')
     }
   }
 }
@@ -113,6 +123,14 @@ export default {
             background: #00213a;
           }
         }
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 35px;
+        left: 50%;
+        transform:translateX(-50%);
+        cursor: pointer;
       }
     }
   }
