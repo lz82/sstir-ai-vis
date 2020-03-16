@@ -7,7 +7,8 @@
 <script>
 import uuid from 'uuid/v4'
 import echarts from 'echarts'
-import 'echarts/map/js/world'
+// import 'echarts/map/js/world'
+import './map/world.js'
 import worldPoint from '@/utils/world-point'
 import worldZh from '@/utils/world-zh'
 
