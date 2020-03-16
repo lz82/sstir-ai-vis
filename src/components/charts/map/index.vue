@@ -114,6 +114,11 @@ export default {
             type: 'map',
             name: domain,
             roam: true,
+            scaleLimit: {
+              min: 1,
+              max: 3
+            },
+            // right: 50,
             map: 'world',
             geoIndex: 1,
             tooltip: {
