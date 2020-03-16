@@ -7,8 +7,8 @@
 <script>
 import uuid from 'uuid/v4'
 import echarts from 'echarts'
-// import 'echarts/map/js/world'
-import './map/world.js'
+import 'echarts/map/js/world'
+// import './map/world.js'
 import worldPoint from '@/utils/world-point'
 import worldZh from '@/utils/world-zh'
 
@@ -117,7 +117,7 @@ export default {
             roam: true,
             scaleLimit: {
               min: 1,
-              max: 3
+              max: 5
             },
             // right: 50,
             map: 'world',
