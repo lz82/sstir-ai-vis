@@ -30,6 +30,28 @@ export default {
     visualUnit: {
       type: String,
       default: '人'
+    },
+    pieces: {
+      type: Array,
+      default: [
+        {
+          gte: 100,
+          label: `> 100 人`,
+          color: '#8c0d0d'
+        },
+        {
+          gte: 30,
+          lt: 100,
+          label: `30 - 99 人`,
+          color: '#ff7b69'
+        },
+        {
+          gte: 1,
+          lt: 30,
+          label: `0 - 29 人`,
+          color: '#ffaa85'
+        }
+      ]
     }
   },
 
@@ -85,25 +107,7 @@ export default {
           textStyle: {
             color: '#fff'
           },
-          pieces: [
-            {
-              gte: 100,
-              label: `> 100 ${this.visualUnit}`,
-              color: '#8c0d0d'
-            },
-            {
-              gte: 30,
-              lt: 100,
-              label: `30 - 99 ${this.visualUnit}`,
-              color: '#ff7b69'
-            },
-            {
-              gte: 1,
-              lt: 30,
-              label: `0 - 29 ${this.visualUnit}`,
-              color: '#ffaa85'
-            }
-          ],
+          pieces: this.pieces,
           show: !0
         },
         backgroundColor: '#404a59',
