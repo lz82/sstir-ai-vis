@@ -14,7 +14,7 @@
         </div> -->
         <h3 class="chart-title">全球人工智能机构分布</h3>
         <div class="chart-wrapper">
-          <chart-map :legend="orgType" :map-data="mapData" unit="机构" visual-unit="家" />
+          <chart-map :legend="orgType" :map-data="mapData" unit="机构" visual-unit="家" :pieces="pieces" />
         </div>
       </el-card>
       <div class="space-10" />
@@ -25,14 +25,25 @@
           <el-table :data="rankData" max-height="540">
             <el-table-column label="排名" width="80px" header-align="center" align="center">
               <template slot-scope="scope">
-                <span :class="'rank' + ' ' + getRank(scope.$index)" >{{scope.$index + 1}}</span>
+                <span :class="'rank' + ' ' + getRank(scope.$index)">{{ scope.$index + 1 }}</span>
               </template>
             </el-table-column>
-            <el-table-column label="机构名称" prop="org" header-align="center" align="center" width="750px" />
-            <el-table-column label="专家数量" prop="experts_quatity" header-align="center" align="center" />
+            <el-table-column
+              label="机构名称"
+              prop="org"
+              header-align="center"
+              align="center"
+              width="750px"
+            />
+            <el-table-column
+              label="专家数量"
+              prop="experts_quatity"
+              header-align="center"
+              align="center"
+            />
             <el-table-column label="所属国家" prop="nation" header-align="center" align="center">
               <template slot-scope="scope">
-                {{convertZh(scope.row.nation)}}
+                {{ convertZh(scope.row.nation) }}
               </template>
             </el-table-column>
           </el-table>
@@ -61,7 +72,26 @@ export default {
     return {
       orgType: ['全部', '院校', '非院校'],
       mapData: mapData,
-      rankData: rankData
+      rankData: rankData,
+      pieces: [
+        {
+          gte: 100,
+          label: `> 100 家`,
+          color: '#8c0d0d'
+        },
+        {
+          gte: 30,
+          lt: 100,
+          label: `30 - 99 家`,
+          color: '#ff7b69'
+        },
+        {
+          gte: 1,
+          lt: 30,
+          label: `0 - 29 家`,
+          color: '#ffaa85'
+        }
+      ]
     }
   },
 
@@ -71,7 +101,7 @@ export default {
     },
 
     getRank(index) {
-      switch(index) {
+      switch (index) {
         default:
           return ''
         case 0:
@@ -116,7 +146,8 @@ export default {
     }
 
     /deep/ .el-table__header {
-      tr, th {
+      tr,
+      th {
         background: #373d44 !important;
         color: #fff;
       }

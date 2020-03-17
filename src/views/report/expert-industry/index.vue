@@ -14,7 +14,7 @@
         </div> -->
         <h3 class="chart-title">全球专家行业分布</h3>
         <div class="chart-wrapper">
-          <chart-map :legend="aiIndustry" :map-data="mapData" />
+          <chart-map :legend="aiIndustry" :map-data="mapData" :pieces="pieces" />
         </div>
       </el-card>
       <div class="space-10" />
@@ -37,7 +37,32 @@ export default {
   data() {
     return {
       aiIndustry: AI_INDUSTRY,
-      mapData: mapData
+      mapData: mapData,
+      pieces: [
+        {
+          gte: 1000,
+          label: `> 1000 人`,
+          color: '#8c0d0d'
+        },
+        {
+          gte: 500,
+          lt: 999,
+          label: `500 - 999 人`,
+          color: '#cc2928'
+        },
+        {
+          gte: 50,
+          lt: 499,
+          label: `50 - 499 人`,
+          color: '#ff7b69'
+        },
+        {
+          gte: 1,
+          lt: 49,
+          label: `1 - 49 人`,
+          color: '#ffaa85'
+        }
+      ]
     }
   }
 }
