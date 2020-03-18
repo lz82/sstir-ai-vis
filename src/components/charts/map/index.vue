@@ -33,25 +33,27 @@ export default {
     },
     pieces: {
       type: Array,
-      default: [
-        {
-          gte: 100,
-          label: `> 100 人`,
-          color: '#8c0d0d'
-        },
-        {
-          gte: 30,
-          lt: 100,
-          label: `30 - 99 人`,
-          color: '#ff7b69'
-        },
-        {
-          gte: 1,
-          lt: 30,
-          label: `0 - 29 人`,
-          color: '#ffaa85'
-        }
-      ]
+      default() {
+        return [
+          {
+            gte: 100,
+            label: `> 100 人`,
+            color: '#8c0d0d'
+          },
+          {
+            gte: 30,
+            lt: 100,
+            label: `30 - 99 人`,
+            color: '#ff7b69'
+          },
+          {
+            gte: 1,
+            lt: 30,
+            label: `0 - 29 人`,
+            color: '#ffaa85'
+          }
+        ]
+      }
     }
   },
 

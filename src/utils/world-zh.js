@@ -205,6 +205,9 @@ export default {
     "USA": "美国",
     "Bahrain": "巴林",
     "Hong Kong": "中国香港",
+    "Hongkong": "中国香港",
     "Barbados": "巴巴多斯",
-    "Seychelles": "塞舌尔"
+    "Seychelles": "塞舌尔",
+    "Taiwan": "中国台湾",
+    "Cayman Islands": "开曼群岛"
 }

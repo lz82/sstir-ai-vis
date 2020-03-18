@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './app.vue'
 import router from './router/index'
+import './permission'
+
 import store from './store'
 
 import VCharts from 'v-charts'

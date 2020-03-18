@@ -18,6 +18,47 @@
         </div>
       </el-card>
       <div class="space-10" />
+
+      <el-card style="margin-bottom: 20px;">
+        <!-- <div class="header-wrapper">
+          <h3 class="chart-title">全球专家行业分布</h3>
+          <a href="./data/专家详情信息表字段.xlsx" download="全球专家领域分布数据.xlsx"
+            ><i class="el-icon-download"
+          /></a>
+        </div> -->
+        <h3 class="chart-title">全球人工智能应用专家行业分布</h3>
+        <div class="tabs-wrapper">
+          <el-tabs v-model="currentTab">
+            <el-tab-pane
+              v-for="domain in Object.keys(mapData)"
+              :key="domain"
+              :label="domain"
+              :name="domain"
+            />
+          </el-tabs>
+          <div class="space-10" />
+          <el-table ref="tbl" :data="currentTbl" stripe height="500">
+            <el-table-column
+              label="国家/地区"
+              prop="name"
+              width="400px"
+              header-align="center"
+              align="center"
+            >
+              <template slot-scope="scope">
+                {{ convertZh(scope.row.name) }}
+              </template>
+            </el-table-column>
+            <el-table-column
+              label="专家数量"
+              prop="value"
+              header-align="center"
+              align="center"
+            ></el-table-column>
+          </el-table>
+        </div>
+      </el-card>
+      <div class="space-10" />
     </div>
   </div>
 </template>
@@ -26,6 +67,7 @@
 import ChartMap from '@/components/charts/map'
 import AI_INDUSTRY from '@/utils/constant'
 import mapData from './data/data'
+import worldZh from '@/utils/world-zh'
 
 export default {
   name: 'ReportExpertIndustry',
@@ -38,6 +80,7 @@ export default {
     return {
       aiIndustry: AI_INDUSTRY,
       mapData: mapData,
+      currentTab: '',
       pieces: [
         {
           gte: 1000,
@@ -63,6 +106,35 @@ export default {
           color: '#ffaa85'
         }
       ]
+    }
+  },
+
+  computed: {
+    currentTbl() {
+      const temp = this.mapData[this.currentTab]
+      if (temp) {
+        return temp.sort((a, b) => {
+          return b.value - a.value
+        })
+      } else {
+        return []
+      }
+    }
+  },
+
+  watch: {
+    currentTab() {
+      this.$refs.tbl.bodyWrapper.scrollTop = 0
+    }
+  },
+
+  mounted() {
+    this.currentTab = Object.keys(this.mapData)[0]
+  },
+
+  methods: {
+    convertZh(data) {
+      return worldZh[data]
     }
   }
 }
@@ -95,6 +167,16 @@ export default {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-around;
+    }
+
+    .tabs-wrapper {
+      /deep/ .el-table__header {
+        tr,
+        th {
+          background: #373d44 !important;
+          color: #fff;
+        }
+      }
     }
 
     .space-10 {

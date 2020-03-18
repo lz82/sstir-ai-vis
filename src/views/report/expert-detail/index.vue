@@ -7,7 +7,7 @@
           ><i class="el-icon-pie-chart" />&nbsp;可视化报告</el-breadcrumb-item
         >
         <el-breadcrumb-item :to="{ path: '/report/expert-rank' }"
-          >全球TOP200人工智能专家</el-breadcrumb-item
+          >全球人工智能TOP200科研专家</el-breadcrumb-item
         >
         <el-breadcrumb-item>专家详情</el-breadcrumb-item>
       </el-breadcrumb>

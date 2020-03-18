@@ -18,11 +18,26 @@
         </div>
       </div>
     </div>
+    <el-dialog title="登录" :visible.sync="showLogin" width="600px">
+      <el-form ref="loginForm" :model="userInfo" :rules="rules">
+        <el-form-item label="用户名:" prop="userName">
+          <el-input v-model="userInfo.userName"></el-input>
+        </el-form-item>
+        <el-form-item label="密码:" prop="pwd">
+          <el-input v-model="userInfo.pwd" show-password></el-input>
+        </el-form-item>
+      </el-form>
+      <span slot="footer" class="dialog-footer">
+        <el-button @click="onCancel">取 消</el-button>
+        <el-button type="primary" @click="onLogin">确 定</el-button>
+      </span>
+    </el-dialog>
   </div>
 </template>
 
 <script>
 import sstir from './img/sstir.png'
+import { getToken, setToken } from '@/utils/auth'
 
 export default {
   name: 'Home',
@@ -31,7 +46,16 @@ export default {
     return {
       sstir,
       height: '100vh',
-      width: '100%'
+      width: '100%',
+      showLogin: false,
+      userInfo: {
+        userName: '',
+        pwd: ''
+      },
+      rules: {
+        userName: [{ required: true, message: '请填写用户名', trigger: 'blur' }],
+        pwd: [{ required: true, message: '请填写密码', trigger: 'blur' }]
+      }
     }
   },
 
@@ -51,15 +75,40 @@ export default {
         this.$forceUpdate()
       })()
     }
+    if (this.$route.query.login) {
+      this.showLogin = true
+    }
   },
 
   methods: {
     onEnter() {
-      this.$router.push('/report/list')
+      if (getToken()) {
+        this.$router.push('/report/list')
+      } else {
+        this.showLogin = true
+      }
     },
 
     onLogoClick() {
       window.open('http://www.sstir.cn', '_blank')
+    },
+
+    onCancel() {
+      this.$refs.loginForm.resetFields()
+      this.showLogin = false
+    },
+
+    onLogin() {
+      this.$refs.loginForm.validate((valid) => {
+        if (valid) {
+          if (this.userInfo.userName.toLowerCase() === 'ircit' && this.userInfo.pwd === 'sstir') {
+            setToken(new Date() - 1)
+            this.$router.push('/report/list')
+          } else {
+            this.$message.error('请输入正确的用户名密码')
+          }
+        }
+      })
     }
   }
 }
