@@ -1,7 +1,7 @@
 <template>
   <div class="report-org-wrapper">
     <div class="breadcrumb">
-      <report-breadcrumb type="全球研究人工智能机构分布" />
+      <report-breadcrumb type="全球人工智能科研和研发机构分布" />
     </div>
 
     <div class="container">
@@ -12,7 +12,7 @@
             ><i class="el-icon-download"
           /></a>
         </div> -->
-        <h3 class="chart-title">全球人工智能机构分布</h3>
+        <h3 class="chart-title">全球人工智能科研和研发机构分布</h3>
         <div class="chart-wrapper">
           <chart-map :legend="orgType" :map-data="mapData" unit="机构" visual-unit="家" :pieces="pieces" />
         </div>
@@ -20,7 +20,7 @@
       <div class="space-10" />
 
       <el-card style="margin-bottom: 20px;">
-        <h3 class="chart-title">全球人工智能机构排行</h3>
+        <h3 class="chart-title">全球人工智能科研和研发机构排行</h3>
         <div class="chart-wrapper">
           <el-table :data="rankData" max-height="540">
             <el-table-column label="排名" width="80px" header-align="center" align="center">

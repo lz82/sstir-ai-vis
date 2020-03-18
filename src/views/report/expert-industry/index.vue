@@ -1,7 +1,7 @@
 <template>
   <div class="report-expert-industry-wrapper">
     <div class="breadcrumb">
-      <report-breadcrumb type="全球专家行业分布" />
+      <report-breadcrumb type="全球人工智能应用专家行业分布" />
     </div>
 
     <div class="container">
@@ -12,7 +12,7 @@
             ><i class="el-icon-download"
           /></a>
         </div> -->
-        <h3 class="chart-title">全球专家行业分布</h3>
+        <h3 class="chart-title">全球人工智能应用专家行业分布</h3>
         <div class="chart-wrapper">
           <chart-map :legend="aiIndustry" :map-data="mapData" :pieces="pieces" />
         </div>

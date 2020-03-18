@@ -1,12 +1,12 @@
 <template>
   <div class="report-expert-domain-wrapper">
     <div class="breadcrumb">
-      <report-breadcrumb type="全球TOP200人工智能专家" />
+      <report-breadcrumb type="全球人工智能TOP200科研专家" />
     </div>
 
     <div class="container">
       <el-card style="margin-bottom: 20px;">
-        <h3 class="chart-title">全球人工智能专家排行</h3>
+        <h3 class="chart-title">全球人工智能TOP200科研专家</h3>
         <div class="chart-wrapper">
           <el-table :data="rankData" max-height="800" :show-header="false">
             <el-table-column width="80px" header-align="center" align="center">

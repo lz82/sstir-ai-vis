@@ -32,23 +32,23 @@ export default {
     return {
       list: [
         {
-          title: '全球专家领域分布',
-          content: '全球人工智能专家在各个领域的分布报告',
+          title: '全球人工智能顶尖科研专家领域分布',
+          content: '全球人工智能活跃中的顶尖科研专家在各学科领域的分布报告',
           type: 'expert-domain'
         },
         {
-          title: '全球专家行业分布',
-          content: '全球人工智能专家在各个行业的分布报告',
+          title: '全球人工智能应用专家行业分布',
+          content: '全球人工智能应用型专家在各行业的分布报告',
           type: 'expert-industry'
         },
         {
-          title: '全球研究人工智能机构分布',
-          content: '全球研究人工智能的机构的分布报告',
+          title: '全球人工智能科研和研发机构分布',
+          content: '全球人工智能科研和研发机构的分布报告',
           type: 'org'
         },
         {
-          title: '全球TOP200人工智能专家',
-          content: '全球排名前200的人工智能专家详情',
+          title: '全球人工智能TOP200科研专家',
+          content: '全球人工智能排名前200的科研专家详情',
           type: 'expert-rank'
         }
       ]

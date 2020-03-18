@@ -1,13 +1,13 @@
 <template>
   <div class="report-expert-domain-wrapper">
     <div class="breadcrumb">
-      <report-breadcrumb type="全球专家领域分布" />
+      <report-breadcrumb type="全球人工智能顶尖科研专家领域分布" />
     </div>
 
     <div class="container">
       <el-card style="margin-bottom: 20px;">
         <div class="header-wrapper">
-          <h3 class="chart-title">全球专家分布</h3>
+          <h3 class="chart-title">全球人工智能顶尖科研专家领域分布</h3>
           <a
             href="/data/excel/全球专家分布.xlsx"
             download="全球专家分布.xlsx"
@@ -23,7 +23,7 @@
       <div class="space-10" />
       <el-card style="margin-bottom: 20px;">
         <div class="header-wrapper">
-          <h3 class="chart-title">专家学历情况</h3>
+          <h3 class="chart-title">全球人工智能顶尖科研专家学历情况</h3>
           <a href="/data/excel/专家学历分布.xlsx" download="专家学历分布.xlsx" target="_blank"
             ><i class="el-icon-download"
           /></a>
@@ -37,7 +37,7 @@
 
       <el-card style="margin-bottom: 20px;">
         <div class="header-wrapper">
-          <h3 class="chart-title">专家领域占比</h3>
+          <h3 class="chart-title">全球人工智能顶尖科研专家领域占比</h3>
           <a href="/data/excel/专家领域分布.xlsx" download="专家领域分布.xlsx" target="_blank"
             ><i class="el-icon-download"
           /></a>
