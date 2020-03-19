@@ -16,7 +16,7 @@
             </el-table-column>
             <el-table-column width="100px">
               <template slot-scope="scope">
-                <img class="avatar" :src="scope.row.AVATAR" />
+                <img class="avatar" :src="scope.row.SID === '53f38fb5dabfae4b34a4d7fa' ? avatar : scope.row.AVATAR" />
               </template>
             </el-table-column>
             <el-table-column>
@@ -90,6 +90,7 @@
 
 <script>
 import rankData from './data/rank-data'
+import avatar from './avatar/1.png'
 
 export default {
   name: 'ReportExpertRank',
@@ -98,7 +99,8 @@ export default {
     return {
       rankData,
       showDetail: false,
-      currentExpert: {}
+      currentExpert: {},
+      avatar
     }
   },
 
