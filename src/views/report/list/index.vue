@@ -5,7 +5,7 @@
     </div>
 
     <div class="container clearfix">
-      <el-card v-for="item in list" :key="item.type" style="margin-bottom: 20px;" class="box-card">
+      <!-- <el-card v-for="item in list" :key="item.type" style="margin-bottom: 20px;" class="box-card">
         <div class="report-wrapper" @click="onRedirectClick(item.type)">
           <div class="report-item">
             <h2 class="title">
@@ -19,7 +19,20 @@
             </div>
           </div>
         </div>
-      </el-card>
+      </el-card> -->
+      <div
+        v-for="item in list"
+        :key="item.type"
+        class="box-card"
+        @click="onRedirectClick(item.type)"
+      >
+        <h2 class="title">
+          {{ item.title }}
+        </h2>
+        <div class="content">
+          {{ item.content }}
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -78,58 +91,27 @@ export default {
   //  }
 
   .container {
-    padding: 20px 0;
     .box-card {
-      width: 48%;
+      width: 100%;
       cursor: pointer;
-    }
-    .box-card:hover {
-      .word p {
-        color: rgba(0, 0, 0, 1);
+      background: url(./img/bg1.png) no-repeat;
+      background-size: cover;
+      margin-bottom: 20px;
+      color: #fff;
+      height: 300px;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      box-shadow: 0px 9px 26.88px 5.12px rgba(0, 0, 0, 0.4);
+      .title {
+        font-size: 24px;
+        padding-bottom: 40px;
       }
-    }
-    .box-card:nth-child(odd) {
-      float: left;
-    }
-    .box-card:nth-child(even) {
-      float: right;
-    }
-    .report-wrapper {
-      height: 100px;
-      .report-item {
-        border-bottom: solid 1px #ccc;
-        padding-bottom: 15px;
-        display: flex;
-        justify-content: space-between;
-        .more {
-          font-size: 12px;
-          color: #409eff;
-          cursor: pointer;
-        }
-        .title {
-          font-size: 16px;
-          font-weight: 600;
-          color: #409eff;
-          padding-left: 10px;
-          border-left: solid 3px #409eff;
-          display: flex;
-          align-items: center;
-        }
-      }
-      .report-item:hover {
-        cursor: pointer;
-      }
+
       .content {
-        display: flex;
-        flex-flow: row nowrap;
-        .word {
-          flex: 1 1 auto;
-          padding-right: 30px;
-          padding-top: 15px;
-          font-size: 14px;
-          color: rgba(0, 0, 0, 0.6);
-          line-height: 24px;
-        }
+        font-size: 16px;
       }
     }
   }
