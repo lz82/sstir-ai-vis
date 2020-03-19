@@ -21,9 +21,10 @@
         </div>
       </el-card> -->
       <div
-        v-for="item in list"
+        v-for="(item, index) in list"
         :key="item.type"
         class="box-card"
+        :class="'bg' + (index + 1)"
         @click="onRedirectClick(item.type)"
       >
         <h2 class="title">
@@ -94,7 +95,6 @@ export default {
     .box-card {
       width: 100%;
       cursor: pointer;
-      background: url(./img/bg1.png) no-repeat;
       background-size: cover;
       margin-bottom: 20px;
       color: #fff;
@@ -113,6 +113,22 @@ export default {
       .content {
         font-size: 16px;
       }
+    }
+
+    .bg1 {
+      background: url(./img/bg1.png) no-repeat;
+    }
+
+    .bg2 {
+      background: url(./img/bg1.png) no-repeat;
+    }
+
+    .bg3 {
+      background: url(./img/bg1.png) no-repeat;
+    }
+
+    .bg4 {
+      background: url(./img/bg1.png) no-repeat;
     }
   }
 }
