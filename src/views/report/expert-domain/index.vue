@@ -78,7 +78,8 @@
           /></a>
         </div>
         <div class="chart-wrapper">
-          <chart-pie :legend="legendData" :chart-data="pieData" />
+          <!-- <chart-pie :legend="legendData" :chart-data="pieData" /> -->
+          <chart-tree-map :chart-data="pieData" />
         </div>
       </el-card>
 
@@ -90,7 +91,8 @@
 <script>
 import ChartMap from '@/components/charts/map'
 import ChartBar from '@/components/charts/bar'
-import ChartPie from '@/components/charts/pie'
+// import ChartPie from '@/components/charts/pie'
+import ChartTreeMap from '@/components/charts/tree-map'
 import { AI_DOMAIN, AI_DOMAIN_NO_ALL } from '@/utils/constant'
 import expertDomainData from './data/data.json'
 import worldZh from '@/utils/world-zh'
@@ -101,7 +103,8 @@ export default {
   components: {
     ChartMap,
     ChartBar,
-    ChartPie
+    // ChartPie,
+    ChartTreeMap
   },
 
   data() {
