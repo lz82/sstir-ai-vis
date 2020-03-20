@@ -93,14 +93,16 @@ export default {
   //  }
 
   .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     .box-card {
       position: relative;
-      width: 100%;
+      width: 48%;
       cursor: pointer;
-      background-size: cover;
       margin-bottom: 20px;
       color: #fff;
-      height: 600px;
+      height: 300px;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
@@ -132,18 +134,22 @@ export default {
 
     .bg1 {
       background: url(./img/bg1.jpg) no-repeat;
+      background-size: cover;
     }
 
     .bg2 {
       background: url(./img/bg2.jpg) no-repeat;
+      background-size: cover;
     }
 
     .bg3 {
       background: url(./img/bg3.jpg) no-repeat;
+      background-size: cover;
     }
 
     .bg4 {
       background: url(./img/bg4.jpg) no-repeat;
+      background-size: cover;
     }
   }
 }
