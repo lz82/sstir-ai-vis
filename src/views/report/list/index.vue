@@ -27,6 +27,7 @@
         :class="'bg' + (index + 1)"
         @click="onRedirectClick(item.type)"
       >
+        <div class="mask"></div>
         <h2 class="title">
           {{ item.title }}
         </h2>
@@ -93,42 +94,56 @@ export default {
 
   .container {
     .box-card {
+      position: relative;
       width: 100%;
       cursor: pointer;
       background-size: cover;
       margin-bottom: 20px;
       color: #fff;
-      height: 300px;
+      height: 600px;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
       justify-content: center;
       border-radius: 10px;
       box-shadow: 0px 9px 26.88px 5.12px rgba(0, 0, 0, 0.4);
+      // background-color: rgba(0, 0, 0, 0.4);
       .title {
         font-size: 24px;
         padding-bottom: 40px;
+        z-index: 2000;
       }
 
       .content {
         font-size: 16px;
+        z-index: 2000;
+      }
+
+      .mask {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
       }
     }
 
     .bg1 {
-      background: url(./img/bg1.png) no-repeat;
+      background: url(./img/bg1.jpg) no-repeat;
     }
 
     .bg2 {
-      background: url(./img/bg1.png) no-repeat;
+      background: url(./img/bg2.jpg) no-repeat;
     }
 
     .bg3 {
-      background: url(./img/bg1.png) no-repeat;
+      background: url(./img/bg3.jpg) no-repeat;
     }
 
     .bg4 {
-      background: url(./img/bg1.png) no-repeat;
+      background: url(./img/bg4.jpg) no-repeat;
     }
   }
 }
