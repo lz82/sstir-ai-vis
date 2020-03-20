@@ -98,11 +98,11 @@ export default {
     justify-content: space-around;
     .box-card {
       position: relative;
-      width: 48%;
+      width: 580px;
+      height: 300px;
       cursor: pointer;
       margin-bottom: 20px;
       color: #fff;
-      height: 300px;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
@@ -110,6 +110,10 @@ export default {
       border-radius: 10px;
       box-shadow: 0px 9px 26.88px 5.12px rgba(0, 0, 0, 0.4);
       // background-color: rgba(0, 0, 0, 0.4);
+      transition: all 0.6s ease-in-out;
+      &:hover {
+        background-size: 120% 120%;
+      }
       .title {
         font-size: 24px;
         padding-bottom: 40px;
@@ -134,22 +138,26 @@ export default {
 
     .bg1 {
       background: url(./img/bg1.jpg) no-repeat;
-      background-size: cover;
+      background-position: center;
+      background-size: 100% 100%;
     }
 
     .bg2 {
       background: url(./img/bg2.jpg) no-repeat;
-      background-size: cover;
+      background-position: center;
+      background-size: 100% 100%;
     }
 
     .bg3 {
       background: url(./img/bg3.jpg) no-repeat;
-      background-size: cover;
+      background-position: center;
+      background-size: 100% 100%;
     }
 
     .bg4 {
       background: url(./img/bg4.jpg) no-repeat;
-      background-size: cover;
+      background-position: center;
+      background-size: 100% 100%;
     }
   }
 }
