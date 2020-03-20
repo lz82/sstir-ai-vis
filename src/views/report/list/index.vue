@@ -95,13 +95,14 @@ export default {
   .container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    // justify-content: space-between;
     .box-card {
       position: relative;
       width: 580px;
       height: 300px;
       cursor: pointer;
       margin-bottom: 20px;
+      margin-right: 20px;
       color: #fff;
       display: flex;
       flex-flow: column nowrap;
