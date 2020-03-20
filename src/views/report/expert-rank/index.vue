@@ -16,12 +16,12 @@
             </el-table-column>
             <el-table-column width="100px">
               <template slot-scope="scope">
-                <img class="avatar" :src="scope.row.SID === '53f38fb5dabfae4b34a4d7fa' ? avatar : scope.row.AVATAR" />
+                <img  class="avatar" :src="scope.row.SID === '53f38fb5dabfae4b34a4d7fa' ? avatar : scope.row.AVATAR" @click="onPreviewClick(scope.row.SID)" />
               </template>
             </el-table-column>
             <el-table-column>
               <template slot-scope="scope">
-                <div class="info-wrapper">
+                <div class="info-wrapper" @click="onPreviewClick(scope.row.SID)">
                   <div class="name">
                     {{ scope.row.NAME }}
                   </div>
@@ -68,7 +68,7 @@
                 </div>
               </template>
             </el-table-column>
-            <el-table-column width="80px">
+            <!-- <el-table-column width="80px">
               <template slot-scope="scope">
                 <el-button
                   circle
@@ -78,7 +78,7 @@
                   @click="onPreviewClick(scope.row.SID)"
                 />
               </template>
-            </el-table-column>
+            </el-table-column> -->
           </el-table>
         </div>
       </el-card>
@@ -192,9 +192,11 @@ export default {
       width: 90px;
       height: 103px;
       object-fit: cover;
+      cursor: pointer;
     }
 
     .info-wrapper {
+      cursor: pointer;
       display: flex;
       flex-flow: column nowrap;
 
