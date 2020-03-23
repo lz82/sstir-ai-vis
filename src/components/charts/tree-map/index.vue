@@ -55,9 +55,45 @@ export default {
             visibleMin: 2000,
             label: {
               // 描述了每个矩形中，文本标签的样式。
-              normal: {
-                show: true,
-                position: ['1%', '1%']
+              // normal: {
+              //   show: true,
+              //   position: ['1%', '1%'],
+              //   // formatter(params) {
+              //   //   if (params.value > 100) {
+              //   //     return '{big|aaaa}'
+              //   //   } else {
+              //   //     return '{small|bbbb}'
+              //   //   }
+              //   // },
+              //   formatter: ['{big|{b}}'],
+              //   rich: {
+              //     big: {
+              //       fontSize: 32,
+              //       color: 'red'
+              //     },
+              //     small: {
+              //       fontSize: 16
+              //     }
+              //   }
+              // }
+              formatter(data) {
+                if(data.value > 100) {
+                  return '{big|'+ data.data.name + '}'
+                } else {
+                  return '{small|'+ data.data.name + '}'
+                }
+              },
+              rich: {
+                big: {
+                  color: '#FFF',
+                  lineHeight: 10,
+                  fontSize: 20
+                },
+                small: {
+                  color: '#FFF',
+                  lineHeight: 10,
+                  fontSize: 12
+                }
               }
             },
             itemStyle: {

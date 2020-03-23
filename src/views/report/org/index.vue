@@ -51,7 +51,7 @@
               align="center"
             >
               <template slot-scope="scope">
-                {{ convertZh(scope.row.name) }}
+                {{ convertZh(scope.row.name) || scope.row.name }}
               </template>
             </el-table-column>
             <el-table-column

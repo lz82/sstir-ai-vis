@@ -2,74 +2,98 @@
   "全部": [
     {
       "name": "United States",
-      "value": 331
+      "value": 1128
     },
     {
       "name": "United Kingdom",
-      "value": 61
-    },
-    {
-      "name": "France",
-      "value": 39
-    },
-    {
-      "name": "Germany",
-      "value": 38
-    },
-    {
-      "name": "Italy",
-      "value": 35
-    },
-    {
-      "name": "China",
-      "value": 33
+      "value": 152
     },
     {
       "name": "Canada",
-      "value": 32
+      "value": 84
+    },
+    {
+      "name": "Germany",
+      "value": 63
+    },
+    {
+      "name": "France",
+      "value": 58
+    },
+    {
+      "name": "China",
+      "value": 54
+    },
+    {
+      "name": "Italy",
+      "value": 42
     },
     {
       "name": "Australia",
-      "value": 29
+      "value": 37
     },
     {
       "name": "Israel",
-      "value": 22
-    },
-    {
-      "name": "Spain",
-      "value": 22
+      "value": 37
     },
     {
       "name": "Switzerland",
-      "value": 22
+      "value": 36
     },
     {
       "name": "Netherlands",
-      "value": 21
+      "value": 32
+    },
+    {
+      "name": "Spain",
+      "value": 29
     },
     {
       "name": "India",
-      "value": 11
+      "value": 24
     },
     {
-      "name": "Japan",
-      "value": 11
-    },
-    {
-      "name": "Sweden",
-      "value": 10
+      "name": "Singapore",
+      "value": 23
     },
     {
       "name": "Taiwan",
-      "value": 10
+      "value": 18
+    },
+    {
+      "name": "Belgium",
+      "value": 16
+    },
+    {
+      "name": "Hong Kong",
+      "value": 15
+    },
+    {
+      "name": "Sweden",
+      "value": 15
     },
     {
       "name": "Finland",
-      "value": 8
+      "value": 13
+    },
+    {
+      "name": "Japan",
+      "value": 12
+    },
+    {
+      "name": "New Zealand",
+      "value": 12
     },
     {
       "name": "Austria",
+      "value": 9
+    },
+    {
+      "name": "Poland",
+      "value": 8
+    },
+    {
+      "name": "Czech Republic",
       "value": 7
     },
     {
@@ -77,27 +101,27 @@
       "value": 7
     },
     {
-      "name": "Poland",
+      "name": "Mexico",
       "value": 7
     },
     {
-      "name": "Belgium",
-      "value": 6
+      "name": "Turkey",
+      "value": 7
     },
     {
-      "name": "Singapore",
-      "value": 6
+      "name": "Portugal",
+      "value": 5
     },
     {
       "name": "Brazil",
       "value": 4
     },
     {
-      "name": "Czech Republic",
+      "name": "Iran",
       "value": 4
     },
     {
-      "name": "Hong Kong",
+      "name": "Korea",
       "value": 4
     },
     {
@@ -105,27 +129,19 @@
       "value": 4
     },
     {
-      "name": "Mexico",
+      "name": "South Korea",
       "value": 4
     },
     {
-      "name": "New Zealand",
-      "value": 4
-    },
-    {
-      "name": "Turkey",
-      "value": 4
+      "name": "Bulgaria",
+      "value": 3
     },
     {
       "name": "Greece",
       "value": 3
     },
     {
-      "name": "Iran",
-      "value": 3
-    },
-    {
-      "name": "Korea",
+      "name": "Hungary",
       "value": 3
     },
     {
@@ -133,24 +149,8 @@
       "value": 3
     },
     {
-      "name": "Portugal",
-      "value": 3
-    },
-    {
-      "name": "Bulgaria",
-      "value": 2
-    },
-    {
-      "name": "Hungary",
-      "value": 2
-    },
-    {
       "name": "South Africa",
-      "value": 2
-    },
-    {
-      "name": "South Korea",
-      "value": 2
+      "value": 3
     },
     {
       "name": "Algeria",
@@ -194,10 +194,6 @@
     },
     {
       "name": "Russia",
-      "value": 1
-    },
-    {
-      "name": "Saudi Arabia",
       "value": 1
     },
     {

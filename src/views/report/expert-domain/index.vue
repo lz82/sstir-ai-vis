@@ -8,7 +8,7 @@
       <el-card style="margin-bottom: 20px;">
         <div class="header-wrapper">
           <h3 class="chart-title">全球人工智能顶尖科研专家领域分布</h3>
-          <a href="/data/excel/全球专家分布.xlsx" download="全球专家分布.xlsx" target="_blank"
+          <a href="/data/excel/全球专家分布.xls" download="全球专家分布.xls" target="_blank"
             ><i class="el-icon-download"
           /></a>
         </div>
