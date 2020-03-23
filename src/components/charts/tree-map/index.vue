@@ -41,7 +41,6 @@ export default {
           trigger: 'item',
           formatter: '{b} : {c} 人'
         },
-        color: [],
         series: [
           {
             type: 'treemap',
