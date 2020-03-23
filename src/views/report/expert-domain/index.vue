@@ -59,7 +59,7 @@
       <el-card style="margin-bottom: 20px;">
         <div class="header-wrapper">
           <h3 class="chart-title">全球人工智能顶尖科研专家学历情况</h3>
-          <a href="/data/excel/专家学历分布.xls" download="专家学历分布.xls" target="_blank"
+          <a href="/data/excel/专家学历分布.xlsx" download="专家学历分布.xlsx" target="_blank"
             ><i class="el-icon-download"
           /></a>
         </div>
@@ -73,7 +73,7 @@
       <el-card style="margin-bottom: 20px;">
         <div class="header-wrapper">
           <h3 class="chart-title">全球人工智能顶尖科研专家领域占比</h3>
-          <a href="/data/excel/专家领域分布.xls" download="专家领域分布.xls" target="_blank"
+          <a href="/data/excel/专家领域分布.xlsx" download="专家领域分布.xlsx" target="_blank"
             ><i class="el-icon-download"
           /></a>
         </div>
