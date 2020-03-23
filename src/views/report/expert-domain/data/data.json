@@ -22,7 +22,7 @@
     },
     {
       "name": "China",
-      "value": 54
+      "value": 87
     },
     {
       "name": "Italy",
@@ -57,16 +57,8 @@
       "value": 23
     },
     {
-      "name": "Taiwan",
-      "value": 18
-    },
-    {
       "name": "Belgium",
       "value": 16
-    },
-    {
-      "name": "Hong Kong",
-      "value": 15
     },
     {
       "name": "Sweden",
@@ -213,7 +205,7 @@
       "value": 1
     }
   ],
-  "\u6570\u636e\u6316\u6398": [
+  "数据挖掘": [
     {
       "name": "United States",
       "value": 394
@@ -232,7 +224,7 @@
     },
     {
       "name": "China",
-      "value": 18
+      "value": 31
     },
     {
       "name": "Germany",
@@ -253,10 +245,6 @@
     {
       "name": "Australia",
       "value": 9
-    },
-    {
-      "name": "Hong Kong",
-      "value": 8
     },
     {
       "name": "Japan",
@@ -288,10 +276,6 @@
     },
     {
       "name": "New Zealand",
-      "value": 5
-    },
-    {
-      "name": "Taiwan",
       "value": 5
     },
     {
@@ -367,7 +351,7 @@
       "value": 1
     }
   ],
-  "\u673a\u5668\u5b66\u4e60": [
+  "机器学习": [
     {
       "name": "United States",
       "value": 318
@@ -390,7 +374,7 @@
     },
     {
       "name": "China",
-      "value": 13
+      "value": 22
     },
     {
       "name": "Italy",
@@ -425,10 +409,6 @@
       "value": 6
     },
     {
-      "name": "Taiwan",
-      "value": 6
-    },
-    {
       "name": "Austria",
       "value": 5
     },
@@ -454,10 +434,6 @@
     },
     {
       "name": "Czech Republic",
-      "value": 3
-    },
-    {
-      "name": "Hong Kong",
       "value": 3
     },
     {
@@ -513,7 +489,7 @@
       "value": 1
     }
   ],
-  "\u81ea\u7136\u8bed\u8a00\u5904\u7406": [
+  "自然语言处理": [
     {
       "name": "United States",
       "value": 316
@@ -536,7 +512,7 @@
     },
     {
       "name": "China",
-      "value": 12
+      "value": 23
     },
     {
       "name": "Netherlands",
@@ -563,10 +539,6 @@
       "value": 6
     },
     {
-      "name": "Hong Kong",
-      "value": 6
-    },
-    {
       "name": "Japan",
       "value": 6
     },
@@ -580,10 +552,6 @@
     },
     {
       "name": "New Zealand",
-      "value": 5
-    },
-    {
-      "name": "Taiwan",
       "value": 5
     },
     {
@@ -663,7 +631,7 @@
       "value": 1
     }
   ],
-  "\u82af\u7247\u6280\u672f": [
+  "芯片技术": [
     {
       "name": "United States",
       "value": 286
@@ -686,7 +654,7 @@
     },
     {
       "name": "China",
-      "value": 15
+      "value": 23
     },
     {
       "name": "Netherlands",
@@ -737,15 +705,7 @@
       "value": 5
     },
     {
-      "name": "Hong Kong",
-      "value": 4
-    },
-    {
       "name": "New Zealand",
-      "value": 4
-    },
-    {
-      "name": "Taiwan",
       "value": 4
     },
     {
@@ -813,7 +773,7 @@
       "value": 1
     }
   ],
-  "\u4eba\u673a\u4ea4\u4e92": [
+  "人机交互": [
     {
       "name": "United States",
       "value": 199
@@ -836,7 +796,7 @@
     },
     {
       "name": "China",
-      "value": 8
+      "value": 16
     },
     {
       "name": "Netherlands",
@@ -852,10 +812,6 @@
     },
     {
       "name": "Switzerland",
-      "value": 5
-    },
-    {
-      "name": "Taiwan",
       "value": 5
     },
     {
@@ -880,10 +836,6 @@
     },
     {
       "name": "Czech Republic",
-      "value": 3
-    },
-    {
-      "name": "Hong Kong",
       "value": 3
     },
     {
@@ -943,7 +895,7 @@
       "value": 1
     }
   ],
-  "\u77e5\u8bc6\u5de5\u7a0b": [
+  "知识工程": [
     {
       "name": "United States",
       "value": 119
@@ -977,20 +929,12 @@
       "value": 3
     },
     {
-      "name": "Hong Kong",
-      "value": 3
-    },
-    {
-      "name": "Taiwan",
-      "value": 3
-    },
-    {
       "name": "Austria",
       "value": 2
     },
     {
       "name": "China",
-      "value": 2
+      "value": 8
     },
     {
       "name": "France",
@@ -1045,7 +989,7 @@
       "value": 1
     }
   ],
-  "\u8bed\u97f3\u8bc6\u522b": [
+  "语音识别": [
     {
       "name": "United States",
       "value": 74
@@ -1080,7 +1024,7 @@
     },
     {
       "name": "China",
-      "value": 3
+      "value": 7
     },
     {
       "name": "Italy",
@@ -1095,10 +1039,6 @@
       "value": 3
     },
     {
-      "name": "Taiwan",
-      "value": 3
-    },
-    {
       "name": "Czech Republic",
       "value": 2
     },
@@ -1108,10 +1048,6 @@
     },
     {
       "name": "Austria",
-      "value": 1
-    },
-    {
-      "name": "Hong Kong",
       "value": 1
     },
     {
@@ -1135,7 +1071,7 @@
       "value": 1
     }
   ],
-  "\u8ba1\u7b97\u673a\u89c6\u89c9": [
+  "计算机视觉": [
     {
       "name": "United States",
       "value": 53
@@ -1178,11 +1114,7 @@
     },
     {
       "name": "China",
-      "value": 1
-    },
-    {
-      "name": "Hong Kong",
-      "value": 1
+      "value": 2
     },
     {
       "name": "Israel",
@@ -1213,7 +1145,7 @@
       "value": 1
     }
   ],
-  "\u4fe1\u606f\u68c0\u7d22\u4e0e\u63a8\u8350": [
+  "信息检索与推荐": [
     {
       "name": "United States",
       "value": 23
@@ -1243,7 +1175,7 @@
       "value": 1
     }
   ],
-  "\u673a\u5668\u4eba": [
+  "机器人": [
     {
       "name": "United States",
       "value": 13
@@ -1281,7 +1213,7 @@
       "value": 1
     }
   ],
-  "\u6570\u636e\u5e93": [
+  "数据库": [
     {
       "name": "United States",
       "value": 14
@@ -1299,7 +1231,7 @@
       "value": 1
     }
   ],
-  "\u53ef\u89c6\u5316": [
+  "可视化": [
     {
       "name": "United States",
       "value": 10
@@ -1329,7 +1261,7 @@
       "value": 1
     }
   ],
-  "\u8ba1\u7b97\u673a\u56fe\u5f62": [
+  "计算机图形": [
     {
       "name": "United States",
       "value": 5

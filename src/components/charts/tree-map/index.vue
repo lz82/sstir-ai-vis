@@ -77,22 +77,24 @@ export default {
               //   }
               // }
               formatter(data) {
-                if(data.value > 100) {
-                  return '{big|'+ data.data.name + '}'
+                if (data.value > 100) {
+                  return '{big|' + data.data.name + '}\n\n{big|' + data.value + '}'
                 } else {
-                  return '{small|'+ data.data.name + '}'
+                  return '{small|' + data.data.name + '}\n{small|' + data.value + '}'
                 }
               },
               rich: {
                 big: {
                   color: '#FFF',
-                  lineHeight: 10,
-                  fontSize: 20
+                  lineHeight: 20,
+                  fontSize: 20,
+                  align: 'center'
                 },
                 small: {
                   color: '#FFF',
-                  lineHeight: 10,
-                  fontSize: 12
+                  lineHeight: 14,
+                  fontSize: 12,
+                  align: 'center'
                 }
               }
             },
