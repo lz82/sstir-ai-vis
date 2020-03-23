@@ -69,7 +69,7 @@
         <h3 class="chart-title">全球人工智能科研和研发机构排行</h3>
         <div class="chart-wrapper">
           <el-table :data="rankData" max-height="540">
-            <el-table-column label="排名" width="80px" header-align="center" align="center">
+            <el-table-column label="排名" width="90px" header-align="center" align="center">
               <template slot-scope="scope">
                 <span :class="'rank' + ' ' + getRank(scope.$index)">{{ scope.$index + 1 }}</span>
               </template>
@@ -226,12 +226,12 @@ export default {
     .rank {
       display: inline-block;
       background: #c3c3c3;
-      width: 25px;
-      height: 25px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       color: #fff;
       text-align: center;
-      line-height: 25px;
+      line-height: 30px;
     }
 
     .no-1 {
