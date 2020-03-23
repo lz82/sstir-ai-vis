@@ -55,13 +55,6 @@
       <div class="chart-wrapper desc" v-html="desc ? desc : '暂无'"></div>
     </el-card>
     <div class="space-10"></div>
-    <el-card v-if="field.length > 0" style="margin-bottom: 20px;">
-      <h3 class="chart-title"><i class="el-icon-trophy" />&nbsp;研究领域</h3>
-      <el-tag v-for="item in field" :Key="item.name" style="margin: 0 10px 10px 0;">
-        {{item.name}}
-      </el-tag>
-    </el-card>
-    <div v-if="field.length > 0" class="space-10"></div>
     <el-card style="margin-bottom: 20px;">
       <h3 class="chart-title"><i class="iconfont icon-lunwentimu" />&nbsp;主要论文</h3>
       <div class="chart-wrapper" style="width:100%;">
@@ -105,8 +98,7 @@ export default {
       desc: '',
       edu: '',
       paperList: [],
-      pIndex: '',
-      field: []
+      pIndex: ''
     }
   },
 
@@ -117,7 +109,6 @@ export default {
   methods: {
     async initData() {
       const detail = rankData.find((item) => item.SID === this.id)
-      console.log(detail)
       const titleObj = titleData.find((item) => item.SID === this.id)
       this.pic = detail.AVATAR
       this.name = detail.NAME
@@ -138,12 +129,6 @@ export default {
       this.hIndex = detail.H_INDEX
       this.desc = detail.BIO // 个人简介
       this.edu = detail.EDU
-      let fieldTemp = detail.FIELD.filter(item => item !== 'nan')
-      this.field = fieldTemp.map(item => {
-        return {
-          name: item
-        }
-      })
       if (titleObj && titleObj.TITLE_LIST && titleObj.TITLE_LIST.length > 0) {
         this.paperList = titleObj.TITLE_LIST.map((item) => {
           return {
