@@ -22,7 +22,7 @@
     },
     {
       "name": "China",
-      "value": 33
+      "value": 47
     },
     {
       "name": "Canada",
@@ -61,10 +61,6 @@
       "value": 10
     },
     {
-      "name": "Taiwan",
-      "value": 10
-    },
-    {
       "name": "Finland",
       "value": 8
     },
@@ -94,10 +90,6 @@
     },
     {
       "name": "Czech Republic",
-      "value": 4
-    },
-    {
-      "name": "Hong Kong",
       "value": 4
     },
     {
@@ -260,7 +252,7 @@
     },
     {
       "name": "China",
-      "value": 9
+      "value": 11
     },
     {
       "name": "India",
@@ -312,10 +304,6 @@
     },
     {
       "name": "Czech Republic",
-      "value": 2
-    },
-    {
-      "name": "Hong Kong",
       "value": 2
     },
     {
@@ -386,7 +374,7 @@
     },
     {
       "name": "China",
-      "value": 24
+      "value": 36
     },
     {
       "name": "Canada",
@@ -410,10 +398,6 @@
     },
     {
       "name": "Spain",
-      "value": 10
-    },
-    {
-      "name": "Taiwan",
       "value": 10
     },
     {
@@ -482,10 +466,6 @@
     },
     {
       "name": "Czech Republic",
-      "value": 2
-    },
-    {
-      "name": "Hong Kong",
       "value": 2
     },
     {

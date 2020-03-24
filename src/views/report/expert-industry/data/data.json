@@ -1,6 +1,6 @@
 {
   "全部": [
-    { "name": "China", "value": 28050 },
+    { "name": "China", "value": 28061 },
     { "name": "Japan", "value": 1501 },
     { "name": "United States", "value": 6975 },
     { "name": "Korea", "value": 365 },
@@ -12,13 +12,11 @@
     { "name": "United Kingdom", "value": 515 },
     { "name": "Finland", "value": 152 },
     { "name": "France", "value": 287 },
-    { "name": "Hongkong", "value": 8 },
     { "name": "Israel", "value": 159 },
     { "name": "Canada", "value": 531 },
     { "name": "Cayman Islands", "value": 5 },
     { "name": "Russia", "value": 51 },
     { "name": "Singapore", "value": 65 },
-    { "name": "Taiwan", "value": 3 },
     { "name": "Ireland", "value": 67 },
     { "name": "United Arab Emirates", "value": 1 },
     { "name": "Austria", "value": 49 },
@@ -46,16 +44,15 @@
     { "name": "Mexico", "value": 3 }
   ],
   "安防监控": [
-    { "name": "China", "value": 10629 },
+    { "name": "China", "value": 10640 },
     { "name": "Japan", "value": 75 },
     { "name": "Korea", "value": 41 },
-    { "name": "Hongkong", "value": 8 },
     { "name": "Sweden", "value": 13 },
     { "name": "Israel", "value": 5 },
     { "name": "Germany", "value": 4 },
     { "name": "United Kingdom", "value": 5 },
     { "name": "Netherlands", "value": 9 },
-    { "name": "Taiwan", "value": 3 },
+
     { "name": "Canada", "value": 2 },
     { "name": "Switzerland", "value": 6 },
     { "name": "France", "value": 3 },
@@ -101,17 +98,16 @@
     { "name": "South Africa", "value": 1 }
   ],
   "自动驾驶": [
-    { "name": "China", "value": 6543 },
+    { "name": "China", "value": 6641 },
     { "name": "Japan", "value": 2226 },
     { "name": "United States", "value": 1533 },
     { "name": "Germany", "value": 748 },
     { "name": "Korea", "value": 402 },
     { "name": "Sweden", "value": 137 },
     { "name": "France", "value": 132 },
-    { "name": "Taiwan", "value": 82 },
     { "name": "United Kingdom", "value": 64 },
     { "name": "Italy", "value": 20 },
-    { "name": "Hongkong", "value": 16 },
+
     { "name": "Austria", "value": 10 },
     { "name": "Canada", "value": 1 },
     { "name": "Belgium", "value": 3 },
