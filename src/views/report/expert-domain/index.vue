@@ -89,9 +89,9 @@
               </el-tooltip>
             </div>
             <div class="right">
-              <i class="el-icon-notebook-2" />&nbsp;
+              <i class="el-icon-notebook-2"  :class="{ active: !nationMode }" />&nbsp;
               <el-switch v-model="nationMode" active-text="图表" inactive-text="表格"> </el-switch
-              >&nbsp;<i class="el-icon-pie-chart"/>
+              >&nbsp;<i class="el-icon-pie-chart" :class="{ active: nationMode }" />
             </div>
           </div>
 
@@ -376,7 +376,11 @@ export default {
 
         .right {
           display: flex;
-          align-items: center;;
+          align-items: center;
+
+          .active {
+            color: #409EFF;
+          }
         }
       }
 
