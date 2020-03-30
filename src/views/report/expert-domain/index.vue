@@ -61,27 +61,57 @@
           <h3 class="chart-title">全球人工智能顶尖科研专家领域分布</h3>
         </div>
         <div class="tabs-wrapper">
-          <el-select v-model="currentNation" filterable placeholder="请选择" style="width: 250px;">
-            <el-option
-              v-for="item in Object.keys(nationData)"
-              :key="item"
-              :label="convertZh(item)"
-              :value="item"
-            >
-              <span style="float: left">{{ getOptionLabel(item) }}</span>
-              <span style="float: right; color: #8492a6; font-size: 13px">{{ item }}</span>
-            </el-option>
-          </el-select>
-          <el-tooltip
-            class="item"
-            effect="dark"
-            content="可输入国家/地区中文名称模糊查询"
-            placement="top-start"
-          >
-            <i class="el-icon-question" style="margin-left: 10px; cursor: pointer;"></i>
-          </el-tooltip>
-          <div class="chart">
+          <div class="select-wrapper">
+            <div class="left">
+              <el-select
+                v-model="currentNation"
+                filterable
+                placeholder="请选择"
+                style="width: 250px;"
+              >
+                <el-option
+                  v-for="item in Object.keys(nationData)"
+                  :key="item"
+                  :label="convertZh(item)"
+                  :value="item"
+                >
+                  <span style="float: left">{{ getOptionLabel(item) }}</span>
+                  <span style="float: right; color: #8492a6; font-size: 13px">{{ item }}</span>
+                </el-option>
+              </el-select>
+              <el-tooltip
+                class="item"
+                effect="dark"
+                content="可输入国家/地区中文名称模糊查询"
+                placement="top-start"
+              >
+                <i class="el-icon-question" style="margin-left: 10px; cursor: pointer;"></i>
+              </el-tooltip>
+            </div>
+            <div class="right">
+              <el-switch v-model="nationMode" active-text="图表" inactive-text="表格"> </el-switch>
+            </div>
+          </div>
+
+          <div v-if="nationMode" class="chart">
             <chart-pie v-if="currentNation" :legend="currentLegend" :chart-data="currentPieData" />
+          </div>
+          <div v-else class="table">
+            <el-table ref="tbl" :data="currentPieData" stripe height="500">
+              <el-table-column
+                label="领域"
+                prop="name"
+                width="400px"
+                header-align="center"
+                align="center"
+              />
+              <el-table-column
+                label="专家数量"
+                prop="value"
+                header-align="center"
+                align="center"
+              ></el-table-column>
+            </el-table>
           </div>
         </div>
       </el-card>
@@ -193,7 +223,8 @@ export default {
       ],
       nations: [],
       nationData: {},
-      currentNation: ''
+      currentNation: '',
+      nationMode: true
     }
   },
 
@@ -273,7 +304,7 @@ export default {
     },
 
     getOptionLabel(name) {
-      const temp = expertDomainData['全部'].find(item => item.name === name)
+      const temp = expertDomainData['全部'].find((item) => item.name === name)
       if (temp) {
         return `${this.convertZh(name)} (${temp.value})`
       } else {
@@ -333,6 +364,17 @@ export default {
           background: #373d44 !important;
           color: #fff;
         }
+      }
+
+      .select-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .table {
+        margin-top: 20px;
       }
     }
 

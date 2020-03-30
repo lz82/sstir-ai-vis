@@ -86,7 +86,7 @@ export default {
           {
             name: '专家数量',
             type: 'pie',
-            radius: '60%',
+            radius: '70%',
             center: ['40%', '45%'],
             data: this.chartData,
             label: {
@@ -113,7 +113,7 @@ export default {
 .pie-wrapper {
   .container {
     width: 1158px;
-    height: 400px;
+    height: 500px;
   }
 }
 </style>
