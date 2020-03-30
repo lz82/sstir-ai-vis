@@ -52,7 +52,7 @@ export default {
             breadcrumb: {
               show: false
             },
-            visibleMin: 2000,
+            visibleMin: 3300,
             label: {
               // 描述了每个矩形中，文本标签的样式。
               // normal: {
@@ -130,7 +130,7 @@ export default {
 .tree-map-wrapper {
   .container {
     width: 1158px;
-    height: 400px;
+    height: 500px;
   }
 }
 </style>
