@@ -59,6 +59,37 @@
         </div>
       </el-card>
       <div class="space-10" />
+      <el-card style="margin-bottom: 20px;">
+        <div class="header-wrapper">
+          <h3 class="chart-title">全球人工智能顶尖科研专家领域分布</h3>
+        </div>
+        <div class="tabs-wrapper">
+          <el-select v-model="currentNation" filterable placeholder="请选择" style="width: 250px;">
+            <el-option
+              v-for="item in Object.keys(nationData)"
+              :key="item"
+              :label="convertZh(item)"
+              :value="item"
+            >
+              <span style="float: left">{{ getOptionLabel(item) }}</span>
+              <span style="float: right; color: #8492a6; font-size: 13px">{{ item }}</span>
+            </el-option>
+          </el-select>
+          <el-tooltip
+            class="item"
+            effect="dark"
+            content="可输入国家/地区中文名称模糊查询"
+            placement="top-start"
+          >
+            <i class="el-icon-question" style="margin-left: 10px; cursor: pointer;"></i>
+          </el-tooltip>
+          <div class="chart">
+            <chart-pie v-if="currentNation" :legend="currentLegend" :chart-data="currentPieData" />
+          </div>
+        </div>
+      </el-card>
+
+      <div class="space-10" />
     </div>
   </div>
 </template>
@@ -67,13 +98,15 @@
 import ChartMap from '@/components/charts/map'
 import AI_INDUSTRY from '@/utils/constant'
 import mapData from './data/data'
+import ChartPie from '@/components/charts/pie'
 import worldZh from '@/utils/world-zh'
 
 export default {
   name: 'ReportExpertIndustry',
 
   components: {
-    ChartMap
+    ChartMap,
+    ChartPie
   },
 
   data() {
@@ -105,7 +138,10 @@ export default {
           label: `1 - 49 人`,
           color: '#ffaa85'
         }
-      ]
+      ],
+      nations: [],
+      nationData: {},
+      currentNation: ''
     }
   },
 
@@ -119,6 +155,20 @@ export default {
       } else {
         return []
       }
+    },
+
+    currentLegend() {
+      const temp = this.nationData[this.currentNation]
+      if (temp) {
+        return temp.map((item) => item.name)
+      } else {
+        return []
+      }
+    },
+
+    currentPieData() {
+      const temp = this.nationData[this.currentNation]
+      return temp || []
     }
   },
 
@@ -130,11 +180,53 @@ export default {
 
   mounted() {
     this.currentTab = Object.keys(this.mapData)[0]
+    this.getNationData()
   },
 
   methods: {
     convertZh(data) {
       return worldZh[data]
+    },
+
+    getNationData() {
+      const all = mapData['全部']
+      all.forEach((n) => {
+        this.nations.push(n.name)
+      })
+      this.nations.forEach((nation) => {
+        Object.keys(mapData).forEach((domain) => {
+          if (domain !== '全部') {
+            const temp = mapData[domain].find((item) => item.name === nation)
+            if (temp) {
+              // const nationZh = this.convertZh(nation)
+              // if (!this.nationData[nationZh]) {
+              //   this.nationData[nationZh] = []
+              // }
+              // this.nationData[nationZh].push({
+              //   name: domain,
+              //   value: temp.value
+              // })
+              if (!this.nationData[nation]) {
+                this.nationData[nation] = []
+              }
+              this.nationData[nation].push({
+                name: domain,
+                value: temp.value
+              })
+            }
+          }
+        })
+      })
+      this.currentNation = this.nations[0]
+    },
+
+    getOptionLabel(name) {
+      const temp = mapData['全部'].find(item => item.name === name)
+      if (temp) {
+        return `${this.convertZh(name)} (${temp.value})`
+      } else {
+        return `${this.convertZh(name)} (0)`
+      }
     }
   }
 }

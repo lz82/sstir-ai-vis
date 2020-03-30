@@ -32,6 +32,12 @@ export default {
     }
   },
 
+  watch: {
+    chartData() {
+      this.initData()
+    }
+  },
+
   created() {
     this.id = uuid()
   },
@@ -51,23 +57,23 @@ export default {
           trigger: 'item',
           position: 'inside'
         },
-        color: [
-          '#dd2c00',
-          '#ff3d00',
-          '#ff6e40',
-          '#ff9e80',
-          '#bf360c',
-          '#d84315',
-          '#e64a19',
-          '#f4511e',
-          '#ff5722',
-          '#ff7043',
-          '#ff8a65',
-          '#ffab91',
-          '#ffccbc',
-          '#fbe9e7',
-          '#ff5722'
-        ],
+        // color: [
+        //   '#dd2c00',
+        //   '#ff3d00',
+        //   '#ff6e40',
+        //   '#ff9e80',
+        //   '#bf360c',
+        //   '#d84315',
+        //   '#e64a19',
+        //   '#f4511e',
+        //   '#ff5722',
+        //   '#ff7043',
+        //   '#ff8a65',
+        //   '#ffab91',
+        //   '#ffccbc',
+        //   '#fbe9e7',
+        //   '#ff5722'
+        // ],
         legend: {
           type: 'scroll',
           orient: 'vertical',
@@ -83,6 +89,9 @@ export default {
             radius: '60%',
             center: ['40%', '45%'],
             data: this.chartData,
+            label: {
+              formatter: '{b}({c})'
+            },
             itemStyle: {
               emphasis: {
                 shadowBlur: 10,
