@@ -89,7 +89,9 @@
               </el-tooltip>
             </div>
             <div class="right">
-              <el-switch v-model="nationMode" active-text="图表" inactive-text="表格"> </el-switch>
+              <i class="el-icon-notebook-2" />&nbsp;
+              <el-switch v-model="nationMode" active-text="图表" inactive-text="表格"> </el-switch
+              >&nbsp;<i class="el-icon-pie-chart"/>
             </div>
           </div>
 
@@ -371,6 +373,11 @@ export default {
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
+
+        .right {
+          display: flex;
+          align-items: center;;
+        }
       }
 
       .table {

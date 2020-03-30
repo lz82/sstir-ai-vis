@@ -91,8 +91,10 @@
                 <i class="el-icon-question" style="margin-left: 10px; cursor: pointer;"></i>
               </el-tooltip>
             </div>
-            <div class="right">
-              <el-switch v-model="nationMode" active-text="图表" inactive-text="表格"> </el-switch>
+            <div class="right">&nbsp;
+              <i class="el-icon-notebook-2" />
+              <el-switch v-model="nationMode" active-text="图表" inactive-text="表格"> </el-switch
+              >&nbsp;<i class="el-icon-pie-chart" />
             </div>
           </div>
 
@@ -252,7 +254,7 @@ export default {
     },
 
     getOptionLabel(name) {
-      const temp = mapData['全部'].find(item => item.name === name)
+      const temp = mapData['全部'].find((item) => item.name === name)
       if (temp) {
         return `${this.convertZh(name)} (${temp.value})`
       } else {
@@ -306,6 +308,11 @@ export default {
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
+
+        .right {
+          display: flex;
+          align-items: center;
+        }
       }
 
       .table {
