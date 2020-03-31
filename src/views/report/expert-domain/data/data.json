@@ -208,7 +208,7 @@
   "\u6570\u636e\u6316\u6398": [
     {
       "name": "United States",
-      "value": 1020
+      "value": 1021
     },
     {
       "name": "United Kingdom",
@@ -406,7 +406,7 @@
   "\u81ea\u7136\u8bed\u8a00\u5904\u7406": [
     {
       "name": "United States",
-      "value": 861
+      "value": 863
     },
     {
       "name": "United Kingdom",
@@ -588,11 +588,11 @@
   "\u673a\u5668\u5b66\u4e60": [
     {
       "name": "United States",
-      "value": 848
+      "value": 849
     },
     {
       "name": "United Kingdom",
-      "value": 103
+      "value": 104
     },
     {
       "name": "China",
@@ -976,7 +976,7 @@
   "\u4eba\u673a\u4ea4\u4e92": [
     {
       "name": "United States",
-      "value": 566
+      "value": 567
     },
     {
       "name": "United Kingdom",
@@ -1316,11 +1316,11 @@
   "\u8bed\u97f3\u8bc6\u522b": [
     {
       "name": "United States",
-      "value": 241
+      "value": 240
     },
     {
       "name": "United Kingdom",
-      "value": 35
+      "value": 36
     },
     {
       "name": "China",
@@ -1442,7 +1442,7 @@
     },
     {
       "name": "United Kingdom",
-      "value": 21
+      "value": 22
     },
     {
       "name": "China",
@@ -1493,15 +1493,15 @@
       "value": 3
     },
     {
+      "name": "Netherlands",
+      "value": 3
+    },
+    {
       "name": "Sweden",
       "value": 3
     },
     {
       "name": "Japan",
-      "value": 2
-    },
-    {
-      "name": "Netherlands",
       "value": 2
     },
     {
@@ -1621,11 +1621,11 @@
       "value": 31
     },
     {
-      "name": "Canada",
-      "value": 4
+      "name": "United Kingdom",
+      "value": 5
     },
     {
-      "name": "United Kingdom",
+      "name": "Canada",
       "value": 4
     },
     {
@@ -1773,6 +1773,10 @@
       "value": 1
     },
     {
+      "name": "Netherlands",
+      "value": 1
+    },
+    {
       "name": "Palestine",
       "value": 1
     },
@@ -1828,6 +1832,56 @@
     },
     {
       "name": "New Zealand",
+      "value": 1
+    }
+  ],
+  "\u5176\u4ed6": [
+    {
+      "name": "United States",
+      "value": 11
+    },
+    {
+      "name": "Canada",
+      "value": 2
+    },
+    {
+      "name": "Netherlands",
+      "value": 2
+    },
+    {
+      "name": "Switzerland",
+      "value": 2
+    },
+    {
+      "name": "China",
+      "value": 1
+    },
+    {
+      "name": "Estonia",
+      "value": 1
+    },
+    {
+      "name": "India",
+      "value": 1
+    },
+    {
+      "name": "Iran",
+      "value": 1
+    },
+    {
+      "name": "Israel",
+      "value": 1
+    },
+    {
+      "name": "Italy",
+      "value": 1
+    },
+    {
+      "name": "Singapore",
+      "value": 1
+    },
+    {
+      "name": "Turkey",
       "value": 1
     }
   ],
@@ -1890,44 +1944,6 @@
   "\u8ba1\u7b97\u673a\u7cfb\u7edf": [
     {
       "name": "United States",
-      "value": 1
-    }
-  ],
-    "\u5176\u4ed6": [
-    {
-      "name": "United States",
-      "value": 3
-    },
-    {
-      "name": "Switzerland",
-      "value": 2
-    },
-    {
-      "name": "Canada",
-      "value": 1
-    },
-    {
-      "name": "China",
-      "value": 1
-    },
-    {
-      "name": "India",
-      "value": 1
-    },
-    {
-      "name": "Iran",
-      "value": 1
-    },
-    {
-      "name": "Italy",
-      "value": 1
-    },
-    {
-      "name": "Netherlands",
-      "value": 1
-    },
-    {
-      "name": "Singapore",
       "value": 1
     }
   ]

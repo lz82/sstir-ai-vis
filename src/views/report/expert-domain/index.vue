@@ -128,7 +128,7 @@
           /></a>
         </div>
         <div class="chart-wrapper">
-          <chart-bar :y-axis="legendNoALlData" :legend="degreeType" :chart-data="degreeData" />
+          <chart-bar :y-axis="eduDomain" :legend="degreeType" :chart-data="degreeData" />
         </div>
       </el-card>
 
@@ -160,6 +160,7 @@ import ChartTreeMap from '@/components/charts/tree-map'
 import { AI_DOMAIN, AI_DOMAIN_NO_ALL } from '@/utils/constant'
 import expertDomainData from './data/data.json'
 import domainData from './data/domain.json'
+import eduData from './data/edu.json'
 import worldZh from '@/utils/world-zh'
 
 export default {
@@ -189,7 +190,7 @@ export default {
             position: 'insideRight'
           },
           barMinWidth: 10,
-          data: [490, 402, 396, 362, 249, 131, 103, 71, 26, 12, 15, 12, 7]
+          data: []
         },
         {
           name: '非博士',
@@ -201,14 +202,15 @@ export default {
             distance: -20
           },
           barMinWidth: 10,
-          data: [193, 148, 147, 140, 93, 49, 31, 18, 8, 10, 4, 6, 2]
+          data: []
         }
       ],
       pieData: domainData,
       nations: [],
       nationData: {},
       currentNation: '',
-      nationMode: true
+      nationMode: true,
+      eduDomain: []
     }
   },
 
@@ -248,6 +250,7 @@ export default {
   mounted() {
     this.currentTab = Object.keys(this.mapData)[0]
     this.getNationData()
+    this.getChartData()
   },
 
   methods: {
@@ -294,6 +297,15 @@ export default {
       } else {
         return `${this.convertZh(name)} (0)`
       }
+    },
+
+    getChartData() {
+      this.eduDomain = Object.keys(eduData).reverse()
+      this.eduDomain.forEach(key => {
+        console.log(key, eduData[key])
+        this.degreeData[0].data.push(eduData[key][0].value)
+        this.degreeData[1].data.push(eduData[key][1] ? eduData[key][1].value : 0)
+      })
     }
   }
 }
