@@ -58,6 +58,30 @@
                         <div class="r r-p">{{ scope.row.NUM_PUBS - 0 }}</div>
                       </div>
                     </el-tooltip>
+
+                    <el-tooltip
+                      class="item"
+                      effect="light"
+                      content="奖项得分"
+                      placement="top-start"
+                    >
+                      <div class="score">
+                        <div class="l l-b">A</div>
+                        <div class="r r-b">{{ scope.row.award_score - 0 }}</div>
+                      </div>
+                    </el-tooltip>
+
+                    <el-tooltip
+                      class="item"
+                      effect="light"
+                      content="总体得分"
+                      placement="top-start"
+                    >
+                      <div class="score">
+                        <div class="l l-y">O</div>
+                        <div class="r r-y">{{ (scope.row.overall - 0).toFixed(2) }}</div>
+                      </div>
+                    </el-tooltip>
                   </div>
                   <div class="title">
                     <i class="iconfont icon-suoshuzhiwei" /> &nbsp;{{ scope.row.POS }}
