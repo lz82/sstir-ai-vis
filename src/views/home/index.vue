@@ -69,7 +69,6 @@ export default {
     window.onresize = () => {
       return (() => {
         const height = document.documentElement.clientHeight
-        console.log(height)
         this.height = height + 'px'
         this.width = height * (1920 / 1080) + 'px'
         this.$forceUpdate()

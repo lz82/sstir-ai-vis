@@ -302,7 +302,6 @@ export default {
     getChartData() {
       this.eduDomain = Object.keys(eduData).reverse()
       this.eduDomain.forEach(key => {
-        console.log(key, eduData[key])
         this.degreeData[0].data.push(eduData[key][0].value)
         this.degreeData[1].data.push(eduData[key][1] ? eduData[key][1].value : 0)
       })

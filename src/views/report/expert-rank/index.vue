@@ -6,9 +6,21 @@
 
     <div class="container">
       <el-card style="margin-bottom: 20px;">
-        <h3 class="chart-title">全球人工智能TOP200科研专家</h3>
+        <div class="page-title">
+          <h3 class="chart-title">全球人工智能TOP200科研专家</h3>
+          <div class="sort">
+            <el-radio-group v-model="sortBy" size="mini">
+              <el-radio-button label="p_index">篇均被引</el-radio-button>
+              <el-radio-button label="H_INDEX">H指标</el-radio-button>
+              <el-radio-button label="NUM_CIATION">引文量</el-radio-button>
+              <el-radio-button label="NUM_PUBS">发表论文量</el-radio-button>
+              <el-radio-button label="award_score">奖项得分</el-radio-button>
+              <el-radio-button label="overall">总体得分</el-radio-button>
+            </el-radio-group>
+          </div>
+        </div>
         <div class="chart-wrapper">
-          <el-table :data="rankData" max-height="800" :show-header="false">
+          <el-table :data="rankList" max-height="800" :show-header="false">
             <el-table-column width="80px" header-align="center" align="center">
               <template slot-scope="scope">
                 <span :class="'rank' + ' ' + getRank(scope.$index)">{{ scope.$index + 1 }}</span>
@@ -16,7 +28,11 @@
             </el-table-column>
             <el-table-column width="100px">
               <template slot-scope="scope">
-                <img  class="avatar" :src="scope.row.SID === '53f38fb5dabfae4b34a4d7fa' ? avatar : scope.row.AVATAR" @click="onPreviewClick(scope.row.SID)" />
+                <img
+                  class="avatar"
+                  :src="scope.row.SID === '53f38fb5dabfae4b34a4d7fa' ? avatar : scope.row.AVATAR"
+                  @click="onPreviewClick(scope.row.SID)"
+                />
               </template>
             </el-table-column>
             <el-table-column>
@@ -26,7 +42,12 @@
                     {{ scope.row.NAME }}
                   </div>
                   <div class="value-wrapper">
-                    <el-tooltip class="item" effect="light" content="篇均被引" placement="top-start">
+                    <el-tooltip
+                      class="item"
+                      effect="light"
+                      content="篇均被引"
+                      placement="top-start"
+                    >
                       <div class="score">
                         <div class="l l-b">S</div>
                         <div class="r r-b">{{ (scope.row.p_index - 0).toFixed(2) }}</div>
@@ -124,7 +145,18 @@ export default {
       rankData,
       showDetail: false,
       currentExpert: {},
-      avatar
+      avatar,
+      sortBy: 'p_index'
+    }
+  },
+
+  computed: {
+    rankList() {
+      return rankData
+        .filter((item, index) => index < 200)
+        .sort((x, y) => {
+          return y[this.sortBy] - x[this.sortBy]
+        })
     }
   },
 
@@ -164,22 +196,31 @@ export default {
         color: #66b1ff;
       }
     }
-    .chart-title {
-      margin: 10px 0 20px 0;
-      font-size: 16px;
-      font-weight: 600;
-      position: relative;
-      padding-left: 10px;
+    .page-title {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      .chart-title {
+        margin: 10px 0 20px 0;
+        font-size: 16px;
+        font-weight: 600;
+        position: relative;
+        padding-left: 10px;
 
-      &:before {
-        position: absolute;
-        content: '';
-        left: 0;
-        top: 0;
-        // top: 9px;
-        width: 4px;
-        height: 20px;
-        background: #66b1ff;
+        &:before {
+          position: absolute;
+          content: '';
+          left: 0;
+          top: 0;
+          // top: 9px;
+          width: 4px;
+          height: 20px;
+          background: #66b1ff;
+        }
+      }
+
+      .sort {
       }
     }
 
