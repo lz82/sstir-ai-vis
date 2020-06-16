@@ -1780,26 +1780,6 @@
     "overall": 427.4210526
   },
   {
-    "SID": "54405a15dabfae805a6b31ac",
-    "AFF_EN": "ShanghaiTech University",
-    "AFF_COUNTRY": "China",
-    "NAME": "Yi Ma",
-    "AVATAR": "//static.aminer.cn/upload/avatar/73/72/360/54405a15dabfae805a6b31ac.png",
-    "per": 247.421052631578,
-    "NUM_CIATION": 42309,
-    "NUM_PUBS": 171,
-    "G_INDEX": 171.0,
-    "H_INDEX": 63,
-    "POS": "Professor",
-    "BIO": "Yi Ma was born in Sichuan Province, China. He received Bachelors degree in Automation and Applied Mathematics from Tsinghua University, Beijing, China, in 1995. He received an Master degree in Electrical Engineering and Computer Sciences (EECS) in 1997, a second Master degree in Mathematics in 2000, and the Ph.D. degree in EECS in 2000, all from the University of California at Berkeley. From 2000 to 2011, he served as a tenured associated professor of the Department of Electrical and Computer Engineering, University of Illinois at Urbana-Champaign, where he now holds an Adjunct Professorship. He also serves as a research associate professor both in the Decision & Control Group of the Coordinated Science Laboratory and in the Image Formation & Processing Group of the Beckman Institute. He was a visiting senior researcher at the Microsoft Research Asia, Beijing, China in fall 2006 and a visiting professor at EECS Department of UC Berkeley in spring 2007. From January 2009 to January 2014, he served as the research manager and principal researcher of the Visual Computing Group at Microsoft Research Asia, Beijing, China. He is now a professor and executive dean of the School of Information Science and Technology of ShanghaiTech University. He also holds a Guest Professorship at the Univeristy of Science and Technology of China, and the Shanghai Jiao Tong University. He has served as an associate editor of the IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) from 2007 to 2011 and the International Journal of Computer Vision (IJCV) from 2010 to 2014. He has also served as the chief guest editor for special issues for the Proceedings of IEEE and the IEEE Signal Processing Magazine in 2010 and 2011. He currently serves as the associate editors for the IEEE Transactions on Information Theory, the IMA Journal on Information and Inference, and the SIAM Journal on Imaging Sciences. He is also on the Senior Editorial Board of IEEE Signal Processing Magazine. He served as an Area Chair for NIPS 2011 and ICCV 2011 (Spain), the Program Chair for ICCV 2013 (Australia), and General Chair for ICCV 2015 (Chile).",
-    "EDU": "? Ph.D. in Electrical Engineering and Computer Sciences, University of California at Berkeley, 2000. ? Master of Arts in Mathematics, University of California at Berkeley, 2000. ? Master of Science in Electrical Engineering and Computer Sciences, University of California at Berkeley, 1997. ? Bachelor Degree in Automatic Control with a supplementary second degree in Applied Mathematics, Tsinghua University, Beijing, China, 1995.",
-    "NATION": "China",
-    "p_index": 247.421052631579,
-    "TITLE": "Robust face recognition via sparse representation.\tImage super-resolution via sparse representation.\tRobust principal component analysis?\tAn Invitation to 3-D Vision: From Images to Geometric Models\tThe Augmented Lagrange Multiplier Method for Exact Recovery of Corrupted\n  Low-Rank Matrices",
-    "award_score": 180,
-    "overall": 427.4210526
-  },
-  {
     "SID": "5488257edabfaed7b5fa350b",
     "AFF_EN": "Middlebury College",
     "AFF_COUNTRY": "USA",
